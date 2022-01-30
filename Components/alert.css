@@ -9,34 +9,32 @@
 }
 .alert-icon{
     margin-right: 0.7rem;
-    /* height:1.2em;
-    width:1.2em; */
     font-size:1.1em;
 }
 
 .alert-success{
-    background-color: #46d665;
-    color: #023d07;
-    border-left:6px solid rgb(17, 138, 17);
+    background-color: var(--light-success-color);
+    color: var(--dark-success-color);
+    border-left:6px solid var(--success-color);
 }
 
 .alert-warning{
-    background-color: #f3ce9b;
-    color: #e28203;
-    border-left:6px solid #ff9100
+    background-color: var(--light-warning-color);
+    color: var(--dark-warning-color);
+    border-left:6px solid var(--dark-warning-color);
    
 }
 
 .alert-danger{
-    background-color: #fcc5c5;
-    color: #dc3545;
-    border-left:6px solid #dc3545;
+    background-color: var(--light-danger-color);
+    color: var(--danger-color);
+    border-left:6px solid var(--dark-danger-color);
 }
 
 .alert-info{
-    background-color: #6ad4ee;
-    color: #0039d4;
-    border-left:6px solid #0039d4;
+    background-color: var(--light-info-color);
+    color: var(--info-color);
+    border-left:6px solid var(--dark-info-color);
 }
 
 
