@@ -1,0 +1,240 @@
+.btn {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 1.25rem 0.4rem;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+/* Primary Button styles */
+.primary-btn {
+  color: var(--complementary-text-color);
+  background-color: var(--primary-color);
+}
+
+.primary-btn:hover {
+  background-color: var(--dark-primary-color);
+}
+
+.primary-btn-outline {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.primary-btn-outline:hover {
+  background-color: var(--dark-primary-color);
+  color: var(--complementary-text-color);
+}
+
+/* Secondary Button Styles */
+
+.secondary-btn {
+  color: var(--complementary-text-color);
+  background-color: var(--secondary-color);
+}
+
+.secondary-btn:hover {
+  background-color: var(--dark-secondary-color);
+}
+
+.secondary-btn-outline {
+  color: var(--dark-secondary-color);
+  border: 1px solid var(--dark-secondary-color);
+}
+.secondary-btn-outline:hover {
+  color: var(--complementary-text-color);
+  background-color: var(--dark-secondary-color);
+}
+
+/* Text with icon button styles */
+
+.primary-btn-text-icon {
+  background-color: var(--primary-color);
+  color: var(--complementary-text-color);
+}
+.primary-btn-text-icon .btn-icon {
+  color: var(--complementary-text-color);
+  padding-right: 0.6rem;
+}
+.primary-btn-text-icon:hover {
+  background-color: var(--dark-primary-color);
+}
+
+.secondary-btn-text-icon {
+  background-color: var(--secondary-color);
+  color: var(--complementary-text-color);
+}
+.secondary-btn-text-icon .btn-icon {
+  color: var(--complementary-text-color);
+  padding-right: 0.6rem;
+}
+.secondary-btn-text-icon:hover {
+  background-color: #686c6e;
+}
+
+/* Colored Buttons */
+
+.success-btn {
+  background-color: var(--success-color);
+  color: var(--complementary-text-color);
+}
+
+.success-btn:hover {
+  background-color: var(--dark-success-color);
+}
+
+.dark-btn {
+  background-color: rgb(39, 36, 36);
+  color: var(--complementary-text-color);
+}
+
+.dark-btn:hover {
+  background-color: rgb(10, 9, 9);
+}
+
+.warning-btn {
+  background-color: var(--warning-color);
+  color: var(--complementary-text-color);
+}
+
+.warning-btn:hover {
+  background-color: var(--dark-warning-color);
+}
+
+.error-btn {
+  background-color: var(--danger-color);
+  color: var(--complementary-text-color);
+}
+
+.error-btn:hover {
+  background-color: var(--dark-danger-color);
+}
+
+/* Neon buttons */
+
+.primary-btn-neon {
+  font-weight: 400;
+  border: 4px solid var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.primary-btn-neon:hover {
+  box-shadow: 0 2px 0 var(--light-primary-color) inset,
+    0 2px 20px 0 var(--light-primary-color),
+    0 2px 0 var(--light-primary-color) inset,
+    0 2px 20px 0 var(--light-primary-color);
+  text-shadow: 0 0 2px var(--light-primary-color),
+    0 0 2px var(--light-primary-color);
+}
+
+/* Disabled Button */
+.btn-disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* CTA sizes */
+.large-btn {
+  font-size: 1.2rem;
+  padding: 0.7rem 1.4rem;
+}
+
+.small-btn {
+  font-size: 0.85rem;
+  padding: 0.3rem 0.7rem;
+  max-height: 25px;
+}
+
+/* Toggle button */
+
+.btn-toggle {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  width: 60px;
+  margin: 0 0.65rem;
+}
+
+.btn-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 1rem;
+  transition: 0.4s;
+}
+.btn-toggle input {
+  display: none;
+}
+
+.btn-slider::before {
+  position: absolute;
+  left: 1px;
+  content: "";
+  height: 25px;
+  width: 30px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 1rem;
+}
+
+input:checked + .btn-slider {
+  background-color: var(--primary-color);
+}
+
+input:checked + .btn-slider:before {
+  transform: translateX(30px);
+}
+
+/* Float button */
+
+.float-btn {
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: var(--primary-color);
+  color: white;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.float-btn-duplicate {
+  border: none;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: var(--primary-color);
+  color: white;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* link button */
+
+.link {
+  padding: 0.4rem;
+  margin: 1.5rem;
+  color: inherit;
+}
+
+.link:hover {
+  color: var(--primary-color);
+}
+
+.link:focus {
+  border: 2px dashed var(--primary-color);
+}
