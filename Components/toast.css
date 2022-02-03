@@ -1,0 +1,43 @@
+.toast {
+  display: flex;
+  flex-direction: row;
+  max-width: 27.5rem;
+  min-height: 2.5rem;
+  background-color: #333;
+  color: var(--complementary-text-color);
+}
+
+.toast-icon,
+.toast-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toast-icon {
+  width: 2.5rem;
+  background-color: black;
+}
+
+.toast-icon i {
+  font-size: 1.25rem;
+}
+
+.toast-success .toast-icon i {
+  color: var(--dark-success-color);
+}
+
+.toast-error .toast-icon i {
+  color: var(--dark-danger-color);
+}
+
+.toast-description {
+  flex-wrap: wrap;
+  max-width: 22.5rem;
+  padding: 0 0.8rem;
+}
+
+.toast-close-icon {
+  background-color: var(--light-secondary-color);
+  cursor: pointer;
+}
