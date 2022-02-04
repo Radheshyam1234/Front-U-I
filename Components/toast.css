@@ -1,6 +1,5 @@
 .toast {
   display: flex;
-  flex-direction: row;
   max-width: 27.5rem;
   min-height: 2.5rem;
   background-color: #333;
