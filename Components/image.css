@@ -1,0 +1,28 @@
+.img-responsive {
+  height: auto;
+  width: 100%;
+}
+
+.img-centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.img-border-around {
+  border: 5px solid var(--primary-color);
+}
+
+.img-border-round {
+  border-radius: 9px;
+}
+
+.img-flipped img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.img-round {
+  border-radius: 50%;
+}
