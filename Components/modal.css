@@ -8,14 +8,13 @@
   width: 100vw;
   height: 100vh;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: var(--complementary-text-color);
   margin: auto;
-  padding: 20px;
+  padding: 1.25rem;
   border: 1px solid #888;
   max-width: 70vw;
   display: flex;
