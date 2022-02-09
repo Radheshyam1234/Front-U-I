@@ -2,23 +2,23 @@
 @import "https://fonts.gstatic.com";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400&display=swap");
 
-@import "./alerts.css";
-@import "./buttons.css";
+@import "./alert.css";
 @import "./avatar.css";
-@import "./typography.css";
 @import "./badges.css";
-@import "./image.css";
+@import "./buttons.css";
 @import "./cards.css";
-@import "./toast.css";
-@import "./image-slider.css";
+@import "./chips.css";
 @import "./grid-layout.css";
-@import "./navbar.css";
+@import "./image-slider.css";
+@import "./image.css";
 @import "./input-slider.css";
 @import "./input.css";
-@import "./List.css";
+@import "./list.css";
 @import "./modal.css";
+@import "./navigation-bar.css";
 @import "./rating.css";
-@import "./chips.css";
+@import "./toast.css";
+@import "./typography.css";
 
 html {
   scroll-behavior: smooth;
