@@ -1,0 +1,26 @@
+.chip {
+  display: inline-block;
+  padding: 0 1.5rem;
+  height: 3.2rem;
+  font-size: 1rem;
+  line-height: 3.2rem;
+  border-radius: 1.5rem;
+  background-color: var(--light-secondary-color);
+}
+
+.chip img {
+  margin: 0 10px 0 -1.6rem;
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+.chip .closebtn {
+  padding-left: 10px;
+  color: var(--dark-secondary-color);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.chip .closebtn:hover {
+  color: #000;
+}
