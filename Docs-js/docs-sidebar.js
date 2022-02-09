@@ -10,7 +10,6 @@ sidebarHamburger.onclick = () => {
 };
 
 const closeSidebarBtn = document.querySelector(".sidebar-close");
-
 closeSidebarBtn.onclick = () => {
   minimizedSidebar.style.display = "none";
 };
