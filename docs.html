@@ -1,12 +1,2315 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>This is the documentation page</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Front-U-I | Docs</title>
+  </head>
+  <body>
+
+    <div class="grid-container">
+      
+          <header class="docs-nav-bar">
+                  <i class="fas fa-bars hamburger-menu" id="sidebar-hamburger"></i>
+          
+                  <a href="#" class="logo">Front-UI</a>
+                  <div class="nav-links">
+                    <a href="./index.html" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Documentation</a>
+                  </div>
+          
+                  <div class="nav-icons" id="docs-nav-bar-nav-icons">
+                          <a href="https://github.com/Radheshyam1234" target="_blank"
+                    ><span class="nav-icon"><i class="fab fa-github"></i></span
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/radheshyam-kumar-4738191aa/"
+                    target="_blank"
+                    ><span class="nav-icon"><i class="fab fa-linkedin-in"></i></span
+                  ></a>
+                  <a href="https://twitter.com/Radhesh13644055" target="_blank"
+                    ><span class="nav-icon"><i class="fab fa-twitter"></i></span
+                  ></a>
+                    </div>
+                  
+          </header>
+
+          <div class="sidebar grid-item" id="side-bar">
+            <ul class="list-style-none">
+              <li><a href="#alerts">Alerts</a></li>
+              <li><a href="#avatar">Avatar</a></li>
+              <li><a href="#badge">Badge</a></li>
+              <li><a href="#buttons">Button</a></li>
+              <li><a href="#cards">Cards</a></li>
+              <li><a href="#chips">Chips</a></li>
+              <li><a href="#grid-layout">Grid Simplified</a></li>
+              <li><a href="#image-slider">Image-slider</a></li>
+              <li><a href="#image">Image</a></li>
+              <li><a href="#input">Input</a></li>
+              <li><a href="#input-slider">Input-slider</a></li>
+              <li><a href="#lists">Lists</a></li>
+              <li><a href="#modal">Modal</a></li>
+              <li><a href="#navbar">Navigation</a></li>
+              <li><a href="#rating">Rating</a></li>
+              <li><a href="#toast">Toast</a></li>
+              <li><a href="#typography">Typography</a></li>
+            </ul>
+          </div>
+
+          <div class="minimized-sidebar" id="minimized-side-bar">
+            <span class="primary-text-color right-float sidebar-close">&times;</span>
+            <p><a href="./index.html" class="nav-link">Home</a>
+            <p><a href="#" class="nav-link">Documentation</a></p> 
+            <h4 class="text-center">Components</h4>
+            <br/>
+            <ul class="list-style-none">
+              <li><a href="#alerts">Alerts</a></li>
+              <li><a href="#avatar">Avatar</a></li>
+              <li><a href="#badge">Badge</a></li>
+              <li><a href="#buttons">Button</a></li>
+              <li><a href="#cards">Cards</a></li>
+              <li><a href="#chips">Chips</a></li>
+              <li><a href="#grid-layout">Grid Simplified</a></li>
+              <li><a href="#image-slider">Image-slider</a></li>
+              <li><a href="#image">Image</a></li>
+              <li><a href="#input">Input</a></li>
+              <li><a href="#input-slider">Input-slider</a></li>
+              <li><a href="#lists">Lists</a></li>
+              <li><a href="#modal">Modal</a></li>
+              <li><a href="#navbar">Navigation</a></li>
+              <li><a href="#rating">Rating</a></li>
+              <li><a href="#typography">Typography</a></li>
+              <li><a href="#toast">Toast</a></li>
+            </ul>
+          </div>
+
+   <main class="main grid-item">
+
+
+
+        <div id="alerts">
+          <div class="content-intro">
+            <h1>Alerts</h1>
+            <p class="text-large text-light">
+              Alert messages can be used to notify the user about something special:
+              danger, success, information or warning.
+            </p>
+          </div>
+          <h4>Alert Bar without close button</h4>
+          <p>
+            Alerts are available in 4 types- success alert, information alert,
+            warning alert, danger alert. <br />
+            These Alerts can be used with
+            <span class="primary-text-color"><b>.alert-box</b></span> class,
+            followed by one of the four contextual classes
+            <span class="primary-text-color"
+              ><b>
+                .alert-success, .alert-warning, .alert-danger, .alert-info
+              </b></span
+            >.<br />
+          </p>
+    
+          <div class="content-example-container">
+            <div class="alert-box alert-success">
+              <span class="alert-icon">
+                <i class="fas fa-check-circle"></i>
+              </span>
+              <b>Success!</b> This alert box indicates a successful action..
+            </div>
+    
+            <div class="alert-box alert-warning">
+              <span class="alert-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+              </span>
+              <b>Warning!</b> This alert box indicates a warning..
+            </div>
+    
+            <div class="alert-box alert-danger">
+              <span class="alert-icon">
+                <i class="fas fa-exclamation-circle"></i>
+              </span>
+              <b>Danger!</b> This alert box indicates a dangerous action..
+            </div>
+    
+            <div class="alert-box alert-info">
+              <span class="alert-icon">
+                <i class="fas fa-info-circle"></i>
+              </span>
+              <b>Info!</b> This alert box indicates informative change..
+            </div>
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-icon%2522%253E%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%2520%2520%253C%252Fspan%253E%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cb%253ESuccess%21%253C%252Fb%253E%2520This%2520alert%2520box%2520indicates%2520a%2520successful%2520or%2520positive%2520action..%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-icon%2522%253E%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%2520%253C%252Fspan%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cb%253EWarning%21%253C%252Fb%253E%2520%2520This%2520alert%2520box%2520indicates%2520a%2520warning..%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-icon%2522%253E%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%2520%253C%252Fspan%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cb%253EDanger%21%253C%252Fb%253E%2520%2520This%2520alert%2520box%2520indicates%2520a%2520dangerous%2520action..%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-icon%2522%253E%2520%253Ci%2520class%253D%2522fas%2520fa-info-circle%2522%253E%253C%252Fi%253E%2520%253C%252Fspan%253E%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cb%253EInfo%21%253C%252Fb%253E%2520%2520This%2520alert%2520box%2520indicates%2520informative%2520change..%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+    
+          <h4>Alert Bar with close button</h4>
+          <p class="text-large text-light">
+            These type of alert bars have a close button to close the alert
+          </p>
+    
+          <div class="content-example-container">
+            <div class="alert-box alert-info" id="alert-close">
+              <span class="alert-icon">
+                <i class="fas fa-info-circle"></i>
+              </span>
+              Click on the "x" symbol to the right to close me.
+              <button
+                type="button"
+                class="btn-close"
+                id="alert-close-btn"
+                onclick="closeAlert()"
+              >
+                &times
+              </button>
+            </div>
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-info%2522%2520id%253D%2522alert-close%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-icon%2522%253E%2520%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-info-circle%2522%253E%253C%252Fi%253E%2520%250A%2520%2520%2520%2520%253C%252Fspan%253E%2520%250A%2520%2520%2520%2520Click%2520on%2520the%2520%2522x%2522%2520symbol%2520to%2520the%2520right%2520to%2520close%2520me.%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn-close%2522%2520id%253D%2522alert-close-btn%2522%2520onclick%253D%2522closeAlert%28%29%2522%253E%2526times%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253C%252Fdiv%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <h4>Javascript</h4>
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=const%2520closingAlertBox%253Ddocument.querySelector%28%2522%2523alert-close%2522%29%253B%250AcloseAlert%253D%28%29%253D%253E%257B%250A%2520%2520%2520%2520closingAlertBox.style.display%253D%2522none%2522%2520%250A%257D"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+        <hr />
+    
+        <div id="avatar">
+
+          <h1>Avatar</h1>
+          <p class="text-large text-light">Avatar is an icon used to show person profile piture in profile section or navigation bars or chat screens etc.
+              There can be both image-avatar as well as text-avatar.
+          </p>
+              
+          <h3>Image Avatar</h3>
+          <p> Avatar is available in four different sizes. To use avatar you need to use <span class="primary-text-color"><b>.avatar</b></span> class.</br>
+              Then you need to add classes like <span class="primary-text-color"><b>.lg-avatar, .md-avatar, .sm-avatar, .xsm-avatar</b></span> according to size of avatar you need.And also add <span class="primary-text-color"><b>.responsive-img</b></span> class to <b>img tag.</b>
+           </p> 
+               
+                  <div class="content-example-container">
+  
+                     <div class="avatar lg-avatar">
+                         <img loading="lazy" class="responsive-img" src="./images/myphoto.jpg" alt="pic">
+                     </div>
+  
+                     <div class="avatar md-avatar">
+                        <img loading="lazy" class="responsive-img" src="./images/image2.jpg" alt="pic">
+                    </div>
+                   
+                      <div class="avatar sm-avatar">
+                          <img loading="lazy" class="responsive-img" src="./images/image3.jpg" alt="pic">
+                      </div>
+                      <div class="avatar xsm-avatar">
+                          <img loading="lazy" class="responsive-img" src="./images/image4.jpg" alt="pic">
+                      </div>
+                      
+                  </div>
+  
+                  <div class="content-code-snippet">
+                      <iframe
+                      src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=1033.75&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522avatar%2520lg-avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520loading%253D%2522lazy%2522%2520class%253D%2522responsive-img%2522%2520src%253D%2522.%252F..%252Fimages%252Fmyphoto.jpg%2522%2520alt%253D%2522pic%2522%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520md-avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520loading%253D%2522lazy%2522%2520class%253D%2522responsive-img%2522%2520src%253D%2522.%252F..%252Fimages%252Fimage2.jpg%2522%2520alt%253D%2522pic%2522%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520sm-avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520loading%253D%2522lazy%2522%2520class%253D%2522responsive-img%2522%2520src%253D%2522.%252F..%252Fimages%252Fimage3.jpg%2522%2520alt%253D%2522pic%2522%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520xsm-avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520loading%253D%2522lazy%2522%2520class%253D%2522responsive-img%2522%2520src%253D%2522.%252F..%252Fimages%252Fimage4.jpg%2522%2520alt%253D%2522pic%2522%253E%250A%2520%2520%253C%252Fdiv%253E"
+                      style=" border:0; transform: scale(1); overflow:hidden;"
+                      sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                  </div>
+  
+              <h3>Text Avatar</h3>
+              <p>Generally, starting letters of user name is used in this avatar. You need to include <span class="primary-text-color"><b>.avatar-text</b></span>  class along with the <span class="primary-text-color">.avatar & (.lg/.md/.sm/.xsm)-avatar</span></p>
+  
+              <div class="content-example-container">
+                  <div class="avatar lg-avatar avatar-text">R</div>
+                  <div class="avatar md-avatar avatar-text">R</div>
+                  <div class="avatar sm-avatar avatar-text">R</div>
+                  <div class="avatar xsm-avatar avatar-text">R</div>
+              </div>
+              <div class="content-code-snippet">
+                  <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=1033.75&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520lg-avatar%2520avatar-text%2522%253ER%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520md-avatar%2520avatar-text%2522%253ER%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520sm-avatar%2520avatar-text%2522%253ER%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520xsm-avatar%2520avatar-text%2522%253ER%253C%252Fdiv%253E"
+                  style=" border:0; transform: scale(1); overflow:hidden;"
+                  sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </div>
+        </div>
+      <hr/>
+
+      <div id="badge">
+        <div class="content-intro">
+          <h1>Badge</h1>
+          <p class="text-large text-light">
+            Badges are used to add additional information to any content, to show
+            counter or status (online or offline) .
+          </p>
+        </div>
+  
+        <h4>Badge on Avatar</h4>
+        <p >
+          To use badge on avatar first add the avatar then add class
+          <span class="primary-text-color"><b>.badge-avatar</b></span> followed by
+          class
+          <span class="primary-text-color"
+            ><b>.badge-green, .badge-red, .badge-yellow, .badge-pink</b></span
+          >
+        </p>
+        <div class="content-example-container">
+          <div class="badge-container">
+            <div class="avatar lg-avatar">
+              <img
+                loading="lazy"
+                class="responsive-img"
+                src="./images/myphoto.jpg"
+                alt="pic"
+              />
+            </div>
+            <span class="badge-avatar badge-green"></span>
+          </div>
+  
+          <div class="badge-container">
+            <div class="avatar md-avatar">
+              <img
+                loading="lazy"
+                class="responsive-img"
+                src="./images/image2.jpg"
+                alt="pic"
+              />
+            </div>
+            <span class="badge-avatar badge-red"></span>
+          </div>
+  
+          <div class="badge-container">
+            <div class="avatar sm-avatar">
+              <img
+                loading="lazy"
+                class="responsive-img"
+                src="./images/image3.jpg"
+                alt="pic"
+              />
+            </div>
+            <span class="badge-avatar badge-yellow"></span>
+          </div>
+  
+          <div class="badge-container">
+            <div class="avatar xsm-avatar">
+              <img
+                loading="lazy"
+                class="responsive-img"
+                src="./images/image4.jpg"
+                alt="pic"
+              />
+            </div>
+            <span class="badge-avatar badge-pink"></span>
+          </div>
+        </div>
+  
+        <div class="content-code-snippet">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=1033.75&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520lg-avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520loading%253D%2522lazy%2522%2520class%253D%2522responsive-img%2522%2520src%253D%2522.%252F..%252Fimages%252Fmyphoto.jpg%2522%2520alt%253D%2522pic%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-avatar%2520badge-green%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520md-avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520loading%253D%2522lazy%2522%2520class%253D%2522responsive-img%2522%2520src%253D%2522.%252F..%252Fimages%252Fimage2.jpg%2522%2520alt%253D%2522pic%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-avatar%2520badge-red%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520sm-avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520loading%253D%2522lazy%2522%2520class%253D%2522responsive-img%2522%2520src%253D%2522.%252F..%252Fimages%252Fimage3.jpg%2522%2520alt%253D%2522pic%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-avatar%2520badge-yellow%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520xsm-avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520loading%253D%2522lazy%2522%2520class%253D%2522responsive-img%2522%2520src%253D%2522.%252F..%252Fimages%252Fimage4.jpg%2522%2520alt%253D%2522pic%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-avatar%2520badge-pink%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+            style="border: 0; transform: scale(1); overflow: hidden"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+  
+        <h4>Badge on Icons</h4>
+        <p >
+          You can add badges on icon as well, just include the class
+          <span class="primary-text-color"><b>.badge-icon</b></span
+          >.
+        </p>
+  
+        <div class="content-example-container">
+          <div style="padding: 2rem">
+            <span class="badge-container"
+              ><i class="far fa-envelope">
+                <span class="badge-icon badge-red">8</span></i
+              ></span
+            >
+          </div>
+  
+          <div style="padding: 2rem">
+            <span class="badge-container"
+              ><i class="fas fa-shopping-cart">
+                <span class="badge-icon badge-pink">8</span></i
+              ></span
+            >
+          </div>
+  
+          <div style="padding: 2rem">
+            <span class="badge-container"
+              ><i class="fab fa-whatsapp">
+                <span class="badge-icon badge-green">8</span></i
+              ></span
+            >
+          </div>
+        </div>
+        <div class="content-code-snippet">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=991.5&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badge-container%2522%253E%253Ci%2520class%253D%2522far%2520fa-envelope%2522%253E%2520%253Cspan%2520class%253D%2522badge-icon%2520badge-red%2522%253E8%253C%252Fspan%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badge-container%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%2520%253Cspan%2520class%253D%2522badge-icon%2520badge-pink%2522%253E8%253C%252Fspan%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badge-container%2522%253E%253Ci%2520class%253D%2522fab%2520fa-whatsapp%2522%253E%2520%253Cspan%2520class%253D%2522badge-icon%2520badge-green%2522%253E8%253C%252Fspan%253E%253C%252Fi%253E%253C%252Fspan%253E"
+            style="border: 0; transform: scale(1); overflow: hidden"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+  
+        <h4>Text Badge</h4>
+        <p >
+          To add the badge on text, first include
+          <span class="primary-text-color"><b>.text-badge</b></span> class. Then
+          to choose color and style of badges include classes like
+          <span class="primary-text-color"
+            ><b>.badge-primary, .badge-secondary, .round-pill-badge .</b></span
+          >
+        </p>
+        <div class="content-example-container">
+          <div>
+            <h2 class="badge-container">
+              Example of Heading with Badge
+              <span class="text-badge badge-primary">New</span>
+            </h2>
+            <h3 class="badge-container">
+              Example of Heading with Badge
+              <span class="text-badge badge-secondary">New</span>
+            </h3>
+            <h4 class="badge-container">
+              Example of Heading with Badge
+              <span class="text-badge badge-secondary round-pill-badge">New</span>
+            </h4>
+            <h5 class="badge-container">
+              Example of Heading with Badge
+              <span class="text-badge badge-primary">New</span>
+            </h5>
+            <h6 class="badge-container">
+              Example of Heading with Badge
+              <span class="text-badge badge-primary">New</span>
+            </h6>
+            <p class="badge-container">
+              Example of Paragraph with Badge
+              <span class="text-badge badge-primary round-pill-badge">New</span>
+            </p>
+          </div>
+        </div>
+        <div class="content-code-snippet">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=991.5&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%2520%253Ch2%2520class%253D%2522badge-container%2522%253EExample%2520of%2520Heading%2520with%2520Badge%2520%253Cspan%250A%2520%2520class%253D%2522text-badge%2520badge-primary%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%253C%252Fh2%253E%250A%2520%2520%253Ch3%2520class%253D%2522badge-container%2522%253EExample%2520of%2520Heading%2520with%2520Badge%2520%253Cspan%250A%2520%2520class%253D%2522text-badge%2520badge-secondary%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%253C%252Fh3%253E%250A%2520%2520%253Ch4%2520class%253D%2522badge-container%2522%253EExample%2520of%2520Heading%2520with%2520Badge%2520%253Cspan%250A%2520%2520%2520%2520%2520%2520class%253D%2522text-badge%2520badge-secondary%2520round-pill-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%253C%252Fh4%253E%250A%2520%2520%253Ch5%2520class%253D%2522badge-container%2522%253EExample%2520of%2520Heading%2520with%2520Badge%2520%253Cspan%250A%2520%2520%2520%2520%2520%2520class%253D%2522text-badge%2520badge-primary%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%253C%252Fh5%253E%250A%2520%2520%253Ch6%2520class%253D%2522badge-container%2522%253EExample%2520of%2520Heading%2520with%2520Badge%2520%253Cspan%250A%2520%2520%2520%2520%2520%2520class%253D%2522text-badge%2520badge-primary%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%253C%252Fh6%253E%250A%2520%2520%253Cp%2520class%253D%2522badge-container%2522%253EExample%2520of%2520Paragraph%2520with%2520Badge%2520%253Cspan%250A%2520%2520%2520%2520%2520%2520class%253D%2522text-badge%2520badge-primary%2520round-pill-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%253C%252Fp%253E"
+            style="border: 0; transform: scale(1); overflow: hidden"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+      </div>
+
+      <hr/>
+
+      <div id="buttons">
+ 
+        <div class="content-intro">
+          <h1>Buttons</h1>
+              <p class="text-large text-light">Buttons are also called as CTA(call to action). Buttons allow users to take actions, and make choices, with a single click.</p>
+                  </div>
+              <h3>Primary and secondary Button Styles</h3>
+              <p> Use <span class="primary-text-color"><b>.btn</b></span> class (for all types of button) followed by <span class="primary-text-color"><b>.primary,.secondary</b></span> 
+                      for primary and secondary buttons and <span class="primary-text-color"><b>.primary-btn-outline,.secondary-btn-outline</b></span> for buttons without background color
+                  </p>   
+      
+                      <div class="content-example-container">
+      
+                          <button class="btn primary-btn">Primary</button>
+                          <button class="btn primary-btn-outline">Primary-outline</button>
+                          <button class="btn secondary-btn">Secondary</button>
+                          <button class="btn secondary-btn-outline">Secondary-outline</button>
+                          
+                      </div>
+      
+                      <div class="content-code-snippet">
+                          <iframe
+                          src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=710.25&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520primary-btn%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520primary-btn-outline%2522%253EPrimary-outline%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520secondary-btn%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520secondary-btn-outline%2522%253ESecondary-outline%253C%252Fbutton%253E"
+                          style=" border:0; transform: scale(1); overflow:hidden;"
+                          sandbox="allow-scripts allow-same-origin">
+                          </iframe>
+                      </div>
+      
+               <h3>Buttons with icons</h3>
+                <p>To use the icons along with the buttons just use the class <span class="primary-text-color"><b>.primary-btn-text-icon, .secondary-btn-text-icon</b></span></p>
+      
+                      <div class="content-example-container">
+      
+                              <button class="btn primary-btn-text-icon"><span class="btn-icon"><i class="fas fa-shopping-cart"></i></span>Checkout</button>
+                              <button class="btn primary-btn-text-icon"><span class="btn-icon"><i class="fa fa-cog"></i></span>Settings</button>
+                              <button class="btn primary-btn-text-icon"><span class="btn-icon"><i class="fas fa-sign-in-alt"></i></span>Sign In</button>
+                              <button class="btn secondary-btn-text-icon "><span class="btn-icon"><i class="fas fa-paper-plane"></i></span>Send</button>
+                      
+                      </div>
+      
+                      <div class="content-code-snippet">
+                          <iframe
+                          src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=854&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520primary-btn-text-icon%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fspan%253ECheckout%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520primary-btn-text-icon%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fa%2520fa-cog%2522%253E%253C%252Fi%253E%253C%252Fspan%253ESettings%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520primary-btn-text-icon%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-sign-in-alt%2522%253E%253C%252Fi%253E%253C%252Fspan%253ESign%2520In%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520secondary-btn-text-icon%2520%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2522%253E%253C%252Fi%253E%253C%252Fspan%253ESend%253C%252Fbutton%253E"
+                          style="width: 1024px; height: 227px; border:0; transform: scale(1); overflow:hidden;"
+                          sandbox="allow-scripts allow-same-origin">
+                          </iframe>
+                      </div>
+      
+                  
+      
+                <h3>Colored buttons</h3> 
+                  <p>We have different colored buttons.To achieve these button styles use the classes <span class="primary-text-color">
+                      <b>.success-btn, .warning-btn, .error-btn, .dark-btn</b></span></p> 
+                  
+                          <div class="content-example-container">
+      
+                              <button class="btn success-btn">Success</button>
+                              <button class="btn warning-btn">Warning</button>
+                              <button class="btn error-btn">Error</button>
+                              <button class="btn dark-btn">Dark</button>
+      
+                          </div>
+      
+                          <div class="content-code-snippet">
+                              <iframe
+                              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=842.5&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%2520%253Cbutton%2520class%253D%2522btn%2520success-btn%2522%253ESuccess%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520warning-btn%2522%253EWarning%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520error-btn%2522%253EError%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520dark-btn%2522%253EDark%253C%252Fbutton%253E"
+                              style=" border:0; transform: scale(1); overflow:hidden;"
+                              sandbox="allow-scripts allow-same-origin">
+                              </iframe>
+                          </div>
+      
+                 <h3>Neon Buttons  </h3>  
+                 <p>These Buttons  glows like a bright light or shining LED/CFL bulb.Use the class <span class="primary-text-color"><b>.primary-btn-neon</b></span> .</p>
+      
+                          <div class="content-example-container">
+      
+                              <button class="btn  primary-btn-neon ">Click Me</button>
+                              <button class="btn  primary-btn-neon ">Neon Button</button>
+                              
+                          </div>
+      
+                          <div class="content-code-snippet">
+                              <iframe
+                              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=781.25&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn%2520%2520primary-btn-neon%2520%2522%253EClick%2520Me%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520%2520primary-btn-neon%2520%2522%253ENeon%2520Button%253C%252Fbutton%253E"
+                              style=" border:0; transform: scale(1); overflow:hidden;"
+                              sandbox="allow-scripts allow-same-origin">
+                              </iframe>
+                          </div>
+          
+      
+      
+                  <h3>Disabled Buttons  </h3>  
+                  <p>A button can be set to a disabled (unclickable) state. The class <span class="primary-text-color"><b>.btn-disabled</b></span> makes a button unclickable.</p>
+      
+                          <div class="content-example-container">
+      
+                              
+                              <button class="btn primary-btn btn-disabled ">Disabled Primary</button>
+                              <button class="btn primary-btn-text-icon btn-disabled"><span class="btn-icon"><i class="fas fa-shopping-cart"></i></span>Add To Cart</button>
+                              <button class="btn secondary-btn-text-icon btn-disabled"><span class="btn-icon"><i class="fas fa-minus-circle"></i></span>Remove</button>
+      
+                          </div>
+      
+                          <div class="content-code-snippet">
+                              <iframe
+                              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=781.25&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn%2520btn-disabled%2520%2522%253EDisabled%2520Primary%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn-text-icon%2520btn-disabled%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fspan%253EAdd%2520To%2520Cart%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520secondary-btn-text-icon%2520btn-disabled%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fal%2520fa-minus-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253ERemove%253C%252Fbutton%253E%250A"
+                              style=" border:0; transform: scale(1); overflow:hidden;"
+                              sandbox="allow-scripts allow-same-origin">
+                              </iframe>
+                          </div>
+                 
+                  <h3>Button Sizes  </h3>  
+                  <p>We provides 3 button sizes. The class that define different button sizes are 
+                      <span class="primary-text-color"><b>large-btn, .small-btn</b></span></p>
+      
+                          <div class="content-example-container">
+      
+                              <button class="btn primary-btn large-btn">Large Button</button>
+                              <button class="btn primary-btn small-btn">Small button</button>
+                              <button class="btn primary-btn">Default</button>
+                              
+                          </div>
+      
+                          <div class="content-code-snippet">
+                              <iframe
+                              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=854&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520primary-btn%2520large-btn%2522%253ELarge%2520Button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520primary-btn%2520small-btn%2522%253ESmall%2520button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520primary-btn%2522%253EDefault%253C%252Fbutton%253E"
+                              style=" border:0; transform: scale(1); overflow:hidden;"
+                              sandbox="allow-scripts allow-same-origin">
+                              </iframe>
+                          </div>
+      
+                  <h3>Toggle Button and Floating Action Button </h3>  
+                      <p>Toggle buttons can be used to change the theme.
+                          Floating-action buttons can be customized by adding the font-awesome icon of your choice. This button will be fixed to right-bottom corner.</p>
+                          <div class="content-example-container">
+      
+                              <label class="btn-toggle">
+                                  <input type="checkbox">
+                                  <span class="btn-slider"></span>
+                              </label>
+                              
+                              <label class="btn-toggle">
+                                  <input type="checkbox" checked>
+                                  <span class="btn-slider"></span>
+                              </label>
+      
+                              <label class="btn-toggle">
+                                  <input type="checkbox" >
+                                  <span class="btn-slider"></span>
+                              </label>
+      
+                              <label class="btn-toggle">
+                                  <input type="checkbox" checked>
+                                  <span class="btn-slider"></span>
+                              </label>
+      
+                              <button class="float-btn-duplicate"><i class="fas fa-plus"></i></button>
+      
+                              <!-- <a href="#"> <button class="float-btn" ><i class="fas fa-arrow-up"></i></button></a> -->
+                              
+                           </div>
+      
+                           <div class="content-code-snippet">
+                              <iframe
+                              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=710.25&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522float-btn%2522%2520%253E%253Ci%2520class%253D%2522far%2520fa-plus%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%253Clabel%2520class%253D%2522btn-toggle%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522btn-slider%2522%253E%253C%252Fspan%253E%250A%253C%252Flabel%253E"
+                              style="border:0; transform: scale(1); overflow:hidden;"
+                              sandbox="allow-scripts allow-same-origin">
+                              </iframe>
+                          </div>
+      
+                  <h3>Link</h3>
+                   <p>These are the link buttons to navigate . Just use the class <span class="primary-text-color"><b>.link</b></span> inside <span class="primary-text-color"><b>a</b>(anchor)</span> tag</p>
+      
+                  <div class="content-example-container">
+         
+                     <a class="link" href="">Read more</a>
+                     <a class="link" href="">Apply coupon</a>
+         
+                  </div>
+      
+                  <div class="content-code-snippet">
+                      <iframe
+                      src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=781.25&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2522%253ERead%2520more%253C%252Fa%253E%250A%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2522%253EApply%2520coupon%253C%252Fa%253E"
+                      style=" border:0; transform: scale(1); overflow:hidden;"
+                      sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                  </div>
+      
+      </div>
+      <hr/>
+
+        <div id="cards">
+          <div class="content-intro">
+            <h1>Cards</h1>
+            <p class="text-large text-light">We have varieties of cards.</p>
+          </div>
+    
+          <h4>Vertical Card + Image + Text</h4>
+          <p>
+            To use vertical cards you need to add
+            <span class="primary-text-color"><b>.card-vertical</b></span> class
+            followed by
+            <span class="primary-text-color"
+              ><b>.card-category, .card-description, .card-price</b></span
+            >
+            classes inside
+            <span class="primary-text-color"><b>.card-details</b></span> wrapper
+            class.
+          </p>
+    
+          <div class="content-example-container justify-center">
+            <div class="card-vertical flex-items">
+              <div class="card-img">
+                <img
+                  loading="lazy"
+                  src="./images/product-image1.jpeg"
+                  alt="Nature"
+                  class="img-responsive"
+                />
+              </div>
+              <i class="far fa-heart card-favourite-icon"></i>
+    
+              <div class="card-details">
+                <div class="card-title text-bold text-medium">
+                  Denim Mens Jacket
+                </div>
+                <div class="card-category text-bold text-medium">Jacket</div>
+                <div class="card-description">
+                  <div class="text-small text-semibold">
+                    Sleeveless Colorblock Men Quilted Jacket
+                  </div>
+                </div>
+                <div class="card-price text-medium text-semibold">Rs. 5700</div>
+                <button class="btn primary-btn-text-icon">
+                  <span class="btn-icon"> <i class="fas fa-shopping-cart"></i></span
+                  >Add To Cart
+                </button>
+              </div>
+            </div>
+    
+            <div class="card-vertical flex-items">
+              <div class="card-img">
+                <img
+                  loading="lazy"
+                  src="./images/product-image3.jpeg"
+                  alt="Nature"
+                  class="img-responsive"
+                />
+              </div>
+    
+              <i class="far fa-heart card-favourite-icon"></i>
+              <span class="card-badge text-semibold text-center"> 20% off</span>
+    
+              <div class="card-details">
+                <div class="card-title text-bold text-medium">
+                  Denim Mens Jacket
+                </div>
+                <div class="card-category text-bold text-medium">Jacket</div>
+                <div class="card-description">
+                  <div class="text-small text-semibold">
+                    Sleeveless Colorblock Men Quilted Jacket
+                  </div>
+                </div>
+                <div class="card-price text-medium text-semibold">Rs. 5700</div>
+                <button class="btn primary-btn-text-icon">
+                  <span class="btn-icon"> <i class="fas fa-shopping-cart"></i></span
+                  >Add To Cart
+                </button>
+              </div>
+            </div>
+    
+            <div class="card-vertical flex-items">
+              <div class="card-img">
+                <img
+                  loading="lazy"
+                  src="./images/product-image2.jpeg"
+                  alt="Nature"
+                  class="img-responsive"
+                />
+              </div>
+              <!-- <i class="fas fa-times card-close-icon"></i> -->
+              <button type="button" class="btn-close">
+                <i class="fas fa-times"></i>
+              </button>
+    
+              <div class="card-details">
+                <div class="card-title text-bold text-medium">
+                  Denim Mens Jacket
+                </div>
+                <div class="card-category text-bold text-medium">Jacket</div>
+                <div class="card-description">
+                  <div class="text-small text-semibold">
+                    Sleeveless Colorblock Men Quilted Jacket
+                  </div>
+                </div>
+                <div class="card-price text-medium text-semibold">Rs. 5700</div>
+                <button class="btn primary-btn-text-icon">
+                  <span class="btn-icon"> <i class="fas fa-shopping-cart"></i></span
+                  >Add To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=805&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522card-vertical%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252F..%252Fimages%252Fproduct-image1.jpeg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Nature%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2520card-favourite-icon%2522%253E%253C%252Fi%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2520text-bold%2520text-medium%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Denim%2520Mens%2520Jacket%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-category%2520text-bold%2520text-medium%2522%253EJacket%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-small%2520text-semibold%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Sleeveless%2520Colorblock%2520Men%2520Quilted%2520Jacket%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price%2520text-medium%2520text-semibold%2522%253ERs.%25205700%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn-text-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522btn-icon%2522%253E%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253EAdd%2520To%2520Cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+    
+          <h4>Card with Text overlay</h4>
+          <p class="text-large text-light"></p>
+    
+          <div class="content-example-container justify-center">
+            <div class="card-vertical flex-items">
+              <div class="overlay-container">
+                <div class="card-img">
+                  <img
+                    loading="lazy"
+                    src="./images/product-image1.jpeg"
+                    alt="Nature"
+                    class="img-responsive"
+                  />
+                </div>
+                <i class="far fa-heart card-favourite-icon"></i>
+    
+                <div class="card-details">
+                  <div class="card-title text-bold text-medium">
+                    Denim Mens Jacket
+                  </div>
+                  <div class="card-category text-bold text-medium">Jacket</div>
+                  <div class="card-description">
+                    <div class="text-small text-semibold">
+                      Sleeveless Colorblock Men Quilted Jacket
+                    </div>
+                  </div>
+                  <div class="card-price text-medium text-semibold">Rs. 5700</div>
+                  <button class="btn primary-btn-text-icon">
+                    <span class="btn-icon">
+                      <i class="fas fa-shopping-cart"></i></span
+                    >Add To Cart
+                  </button>
+                </div>
+              </div>
+              <div class="overlay-text">
+                <span class="text-large text-semibold">Not Available</span>
+              </div>
+            </div>
+          </div>
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=805&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card-vertical%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522overlay-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252F..%252Fimages%252Fproduct-image1.jpeg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Nature%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2520card-favourite-icon%2522%253E%253C%252Fi%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2520text-bold%2520text-medium%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Denim%2520Mens%2520Jacket%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-category%2520text-bold%2520text-medium%2522%253EJacket%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-small%2520text-semibold%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Sleeveless%2520Colorblock%2520Men%2520Quilted%2520Jacket%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price%2520text-medium%2520text-semibold%2522%253ERs.%25205700%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn-text-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253EAdd%2520To%2520Cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522overlay-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-large%2520text-semibold%2522%253ENot%2520Available%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+    
+          <h4>Horizontal Card + Text + Image</h4>
+          <p class="text-large text-light">
+            Use the horizontal cards by adding the
+            <span class="primary-text-color"><b>.card-horizontal</b></span>
+            class.
+          </p>
+    
+          <div class="content-example-container justify-center">
+            <div class="card-horizontal">
+              <div class="card-img">
+                <img
+                  loading="lazy"
+                  src="./images/product-image1.jpeg"
+                  alt="Nature"
+                  class="img-responsive"
+                />
+              </div>
+              <span class="card-badge text-semibold text-center"> 20% off</span>
+              <div class="card-details">
+                <div class="card-title text-bold text-large">Denim Mens Jacket</div>
+                <div class="card-category text-bold">Jacket</div>
+                <div class="card-description">
+                  <div class="text-small">
+                    <p>
+                      Sleeveless Colorblock Men Quilted Jacket . Very nice winter
+                      collection make your winter warm!!
+                    </p>
+                  </div>
+                </div>
+                <div class="card-price text-medium text-semibold">Rs. 5700</div>
+                <div class="footer">
+                  <button class="btn primary-btn-text-icon">
+                    <span class="btn-icon">
+                      <i class="fas fa-shopping-cart"></i></span
+                    >Add To Cart
+                  </button>
+                  <button class="btn secondary-btn">Add To Wishlist</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=805&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card-horizontal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252F..%252Fimages%252Fproduct-image1.jpeg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Nature%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-badge%2520text-semibold%2520text-center%2522%253E%252020%2525%2520off%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2520text-bold%2520text-large%2522%253EDenim%2520Mens%2520Jacket%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-category%2520text-bold%2522%253EJacket%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-small%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Sleeveless%2520Colorblock%2520Men%2520Quilted%2520Jacket%2520.%2520Very%2520nice%2520winter%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520collection%2520make%2520your%2520winter%2520warm%21%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price%2520text-medium%2520text-semibold%2522%253ERs.%25205700%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn-text-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253EAdd%2520To%2520Cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520secondary-btn%2522%253EAdd%2520To%2520Wishlist%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+    
+          <h3>Text Card</h3>
+          <p>
+            These are the text only cards. Add the class
+            <span class="primary-text-color"><b>.text-card</b></span>
+            and inside it use
+            <span class="primary-text-color"
+              ><b>.card-content, .card-action</b></span
+            >
+            classes.
+          </p>
+          <div class="content-example-container justify-center">
+            <div class="text-card">
+              <div class="card-content">
+                <span class="card-title text-large">Card Title</span>
+                <p>
+                  I am a very simple card I contain basic information. I am
+                  convenient because I require little markup to use effectively.
+                </p>
+              </div>
+              <hr />
+              <div class="card-action">
+                <a href="#">This is a link</a>
+                <a href="#">This is a link</a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=805&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522text-card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-title%2520text-large%2522%253ECard%2520Title%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520I%2520am%2520a%2520very%2520simple%2520card%2520I%2520contain%2520basic%2520information.%2520I%2520am%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520convenient%2520because%2520I%2520require%2520little%2520markup%2520to%2520use%2520effectively.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Chr%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253EThis%2520is%2520a%2520link%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253EThis%2520is%2520a%2520link%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+        <hr/>
+
+        <div id="chips">
+          <h1>Chips component</h1>
+          <p class="text-large text-light">
+            We have contact chips for you.See how to use them.
+          </p>
+          <h3>Contact Chips</h3>
+          <p>
+            use the class <span class="primary-text-color"><b>.chip</b></span> on
+            the wrapper div and
+            <span class="primary-text-color"><b>.img-round & .left-float</b></span>
+            on the image element.
+          </p>
+    
+          <div class="content-example-container">
+            <div class="chip">
+              <img
+                loading="lazy"
+                src="./images/myphoto.jpg"
+                alt="Nature"
+                class="img-round left-float"
+              />
+              <span class="primary-text-color"><b>Radheshyam</b> </span>
+            </div>
+            <div class="chip" style="margin-left: 15px">
+              <img
+                loading="lazy"
+                src="./images/image2.jpg"
+                alt="Nature"
+                class="img-round left-float"
+              />
+              <span class="primary-text-color"><b>Smaira</b> </span>
+            </div>
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=752.75&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522chip%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252F..%252Fimages%252Fimage2.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Nature%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-round%2520left-float%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522primary-text-color%2522%253E%253Cb%253ESmaira%253C%252Fb%253E%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+    
+          <h3>Chip with close button</h3>
+          <p>
+            To make a closable Contact Chips add an element with an onclick event
+            attribute
+          </p>
+    
+          <div class="content-example-container">
+            <div class="chip">
+              <img
+                loading="lazy"
+                src="./images/myphoto.jpg"
+                alt="Nature"
+                class="img-round left-float"
+              />
+              <span class="primary-text-color"><b>Radheshyam</b> </span>
+              <span
+                class="closebtn right-float"
+                onclick="this.parentElement.style.display='none'"
+                >&times;</span
+              >
+            </div>
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=752.75&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522chip%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252F..%252Fimages%252Fmyphoto.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Nature%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-round%2520left-float%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522primary-text-color%2522%253E%253Cb%253ERadheshyam%253C%252Fb%253E%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522closebtn%2520right-float%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520onclick%253D%2522this.parentElement.style.display%253D%27none%27%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%2526times%253B%253C%252Fspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+        <hr/>
+
+        <div id="grid-layout">
+          <div class="content-intro">
+            <h1>Grid Based Layout</h1>
+            <p class="text-large text-light">Use grid when you want sections in view. Check the examples below.</p>
+          </div>
+          <h4>Grid 50:50 layout</h4>
+           <p >Add <span class="primary-text-color"><b>.grid-50-50-layout</b></span>
+               class on the wrapper div wrapping 2 divs.</p>
+               
+          <div class="content-example-container">
+           
+              <div class="grid-50-50-layout">
+                <div >
+                    <img
+                      loading="lazy"
+                      src="./images/product-image3-landscape.jpeg"
+                      alt="Nature"
+                      class="img-responsive"
+                    />
+                  </div>
+                  <div class="card-horizontal">
+                       <div class="card-details text-center">
+                              <div class="card-title text-bold text-large">Denim Mens Jacket</div>
+                              <div class="card-category text-bold">Jacket</div>
+                              <div class="card-price text-medium text-semibold">
+                              Starting at Rs. 5700
+                              </div>
+                              <div class="footer">
+                              <button class="btn secondary-btn">Explore</button>
+                              </div>
+                        </div>
+                   </div> 
+              </div>       
+            </div>  
+    
+            <div class="content-code-snippet">
+              <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=805&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522grid-50-50-layout%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252F..%252Fimages%252Fproduct-image3-landscape.jpeg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Nature%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-horizontal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2520text-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2520text-bold%2520text-large%2522%253EDenim%2520Mens%2520Jacket%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-category%2520text-bold%2522%253EJacket%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price%2520text-medium%2520text-semibold%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Starting%2520at%2520Rs.%25205700%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520secondary-btn%2522%253EExplore%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520"
+              style=" border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            </div>
+    
+              <h4>Side by side (70:30) layout</h4>
+              <p>Add <span class="primary-text-color"><b>grid-70-30-layout</b></span> class on wrapper div which is
+                  wrapping
+                  2 divs</p>
+    
+               <div class="content-example-container">
+                <div class="grid-70-30-layout">
+                    <div >
+                        <img
+                          loading="lazy"
+                          src="./images/product-image3-landscape.jpeg"
+                          alt="Nature"
+                          class="img-responsive"
+                        />
+                      </div>
+                      <div class="card-horizontal">
+                           <div class="card-details text-center">
+                                  <div class="card-title text-bold text-large">Denim Mens Jacket</div>
+                                  <div class="card-category text-bold">Jacket</div>
+                                  <div class="card-price text-medium text-semibold">
+                                  Starting at Rs. 5700
+                                  </div>
+                                  <div class="footer">
+                                  <button class="btn secondary-btn">Explore</button>
+                                  </div>
+                            </div>
+                       </div> 
+                  </div>       
+               </div>  
+               
+               <div class="content-code-snippet">
+                <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=805&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522grid-70-30-layout%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252F..%252Fimages%252Fproduct-image3-landscape.jpeg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Nature%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-horizontal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2520text-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2520text-bold%2520text-large%2522%253EDenim%2520Mens%2520Jacket%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-category%2520text-bold%2522%253EJacket%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price%2520text-medium%2520text-semibold%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Starting%2520at%2520Rs.%25205700%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520secondary-btn%2522%253EExplore%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%2520%2520%2520%2520"
+                style=" border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+              </div>
+    
+               <h4>Side by side (70:30) layout</h4>
+               <p>Add <span class="primary-text-color"><b>grid-30-70-layout</b></span> class on wrapper div which is
+                wrapping
+                2 divs</p>
+     
+                <div class="content-example-container ">
+                 <div class="grid-30-70-layout">
+                     <div >
+                         <img
+                           loading="lazy"
+                           src="./images/product-image3-landscape.jpeg"
+                           alt="Nature"
+                           class="img-responsive"
+                         />
+                       </div>
+                       <div class="card-horizontal">
+                            <div class="card-details text-center">
+                                   <div class="card-title text-bold text-large">Denim Mens Jacket</div>
+                                   <div class="card-category text-bold">Jacket</div>
+                                   <div class="card-price text-medium text-semibold">
+                                   Starting at Rs. 5700
+                                   </div>
+                                   <div class="footer">
+                                   <button class="btn secondary-btn">Explore</button>
+                                   </div>
+                             </div>
+                        </div> 
+                   </div>       
+                </div> 
+    
+                <div class="content-code-snippet">
+                  <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=805&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522grid-30-70-layout%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252F..%252Fimages%252Fproduct-image3-landscape.jpeg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Nature%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-horizontal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2520text-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2520text-bold%2520text-large%2522%253EDenim%2520Mens%2520Jacket%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-category%2520text-bold%2522%253EJacket%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price%2520text-medium%2520text-semibold%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Starting%2520at%2520Rs.%25205700%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520secondary-btn%2522%253EExplore%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520"
+                  style=" border:0; transform: scale(1); overflow:hidden;"
+                  sandbox="allow-scripts allow-same-origin">
+                </iframe>
+                </div>
+    
+                <h4>Example of product listing grid (4 columns) layout</h4></br>
+                <p>Add <span class="primary-text-color"><b>grid-4-column-layout</b></span> 
+                  class on wrapper div 
+                 </p>
+      
+                 <div class="content-example-container">
+    
+                    <div class="grid-4-column-layout">
+                    <div class="card-vertical ">
+                        <div class="card-img">
+                          <img
+                            loading="lazy"
+                            src="./images/product-image3-landscape.jpeg"
+                            alt="Nature"
+                            class="img-responsive"
+                          />
+                        </div>
+                        <i class="far fa-heart card-favourite-icon"></i>
+              
+                        <div class="card-details">
+                          <div class="card-title text-bold text-medium">
+                            Denim Mens Jacket
+                          </div>
+                          <div class="card-category text-bold text-medium">Jacket</div>
+                          <div class="card-description">
+                            <div class="text-small text-semibold">
+                              Sleeveless Colorblock Men Quilted Jacket
+                            </div>
+                          </div>
+                          <div class="card-price text-medium text-semibold">Rs. 5700</div>
+                          <button class="btn primary-btn-text-icon">
+                            <span class="btn-icon"> <i class="fas fa-shopping-cart"></i></span
+                            >Add
+                          </button>
+                        </div>
+                      </div>
+    
+                 <div class="card-vertical ">
+                    <div class="card-img">
+                      <img
+                        loading="lazy"
+                        src="./images/product-image3-landscape.jpeg"
+                        alt="Nature"
+                        class="img-responsive"
+                      />
+                    </div>
+                    <i class="far fa-heart card-favourite-icon"></i>
+          
+                    <div class="card-details">
+                      <div class="card-title text-bold text-medium">
+                        Denim Mens Jacket
+                      </div>
+                      <div class="card-category text-bold text-medium">Jacket</div>
+                      <div class="card-description">
+                        <div class="text-small text-semibold">
+                          Sleeveless Colorblock Men Quilted Jacket
+                        </div>
+                      </div>
+                      <div class="card-price text-medium text-semibold">Rs. 5700</div>
+                      <button class="btn primary-btn-text-icon">
+                        <span class="btn-icon"> <i class="fas fa-shopping-cart"></i></span
+                        >Add 
+                      </button>
+                    </div>
+                  </div>
+    
+                  <div class="card-vertical">
+                    <div class="card-img">
+                      <img
+                        loading="lazy"
+                        src="./images/product-image3-landscape.jpeg"
+                        alt="Nature"
+                        class="img-responsive"
+                      />
+                    </div>
+                    <i class="far fa-heart card-favourite-icon"></i>
+          
+                    <div class="card-details">
+                      <div class="card-title text-bold text-medium">
+                        Denim Mens Jacket
+                      </div>
+                      <div class="card-category text-bold text-medium">Jacket</div>
+                      <div class="card-description">
+                        <div class="text-small text-semibold">
+                          Sleeveless Colorblock Men Quilted Jacket
+                        </div>
+                      </div>
+                      <div class="card-price text-medium text-semibold">Rs. 5700</div>
+                      <button class="btn primary-btn-text-icon">
+                        <span class="btn-icon"> <i class="fas fa-shopping-cart"></i></span
+                        >Add 
+                      </button>
+                    </div>
+                  </div>
+    
+                  <div class="card-vertical ">
+                    <div class="card-img">
+                      <img
+                        loading="lazy"
+                        src="./images/product-image3-landscape.jpeg"
+                        alt="Nature"
+                        class="img-responsive"
+                      />
+                    </div>
+                    <i class="far fa-heart card-favourite-icon"></i>
+          
+                    <div class="card-details">
+                      <div class="card-title text-bold text-medium">
+                        Denim Mens Jacket
+                      </div>
+                      <div class="card-category text-bold text-medium">Jacket</div>
+                      <div class="card-description">
+                        <div class="text-small text-semibold">
+                          Sleeveless Colorblock Men Quilted Jacket
+                        </div>
+                      </div>
+                      <div class="card-price text-medium text-semibold">Rs. 5700</div>
+                      <button class="btn primary-btn-text-icon">
+                        <span class="btn-icon"> <i class="fas fa-shopping-cart"></i></span
+                        >Add 
+                      </button>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+    
+                  <div class="content-code-snippet">
+                    <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=805&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522grid-4-column-layout%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-vertical%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252F..%252Fimages%252Fproduct-image3-landscape.jpeg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Nature%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2520card-favourite-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2520text-bold%2520text-medium%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Denim%2520Mens%2520Jacket%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-category%2520text-bold%2520text-medium%2522%253EJacket%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-small%2520text-semibold%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Sleeveless%2520Colorblock%2520Men%2520Quilted%2520Jacket%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price%2520text-medium%2520text-semibold%2522%253ERs.%25205700%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn-text-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522btn-icon%2522%253E%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253EAdd%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-vertical%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252F..%252Fimages%252Fproduct-image3-landscape.jpeg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Nature%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2520card-favourite-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2520text-bold%2520text-medium%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Denim%2520Mens%2520Jacket%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-category%2520text-bold%2520text-medium%2522%253EJacket%253C%252Fdiv%253E%250A%2520"
+                    style=" border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                  </div>
+    
+        </div>
+        <hr/>
+
+        <div id="image-slider">
+          <h1>Image Slider</h1>
+          <p class="text-large text-light">
+            Sliders can be used for showing product on websites.
+          </p>
+          <p>
+            Add <span class="primary-text-color"><b>.slides-container</b></span> to
+            the wrapper div.<br />
+            Then add class <span class="primary-text-color"><b>.mySlides</b></span>
+            on each slides (wrapping the img element) you want to add.
+          </p>
+    
+          <div class="content-example-container">
+            <div class="slides-container">
+              <div class="mySlides fade">
+                <img
+                  loading="lazy"
+                  src="./images/img_snow_wide.jpg"
+                  alt="Nature"
+                  class="img-responsive"
+                />
+                <div class="text-center text-semibold">Caption Text</div>
+              </div>
+    
+              <div class="mySlides fade">
+                <img
+                  loading="lazy"
+                  src="./images/img_mountains_wide.jpg"
+                  alt="Nature"
+                  class="img-responsive"
+                />
+                <div class="text-center text-semibold">Caption Two</div>
+              </div>
+    
+              <div class="mySlides fade">
+                <img
+                  loading="lazy"
+                  src="./images/img_nature_wide.jpg"
+                  alt="Nature"
+                  class="img-responsive"
+                />
+                <div class="text-center text-semibold">Caption Three</div>
+              </div>
+    
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=752.75&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522slides-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522mySlides%2520fade%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252F..%252Fimages%252F%252Fimg_snow_wide.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Nature%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-center%2520text-semibold%2522%253ECaption%2520Text%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522mySlides%2520fade%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252F..%252Fimages%252Fimg_mountains_wide.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Nature%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-center%2520text-semibold%2522%253ECaption%2520Two%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522prev%2522%2520onclick%253D%2522plusSlides%28-1%29%2522%253E%2526%252310094%253B%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522next%2522%2520onclick%253D%2522plusSlides%281%29%2522%253E%2526%252310095%253B%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+    
+          <h3>Javascript Code</h3>
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=752.75&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520var%2520slideIndex%2520%253D%25201%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520showSlides%28slideIndex%29%253B%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520function%2520plusSlides%28n%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520showSlides%28%28slideIndex%2520%252B%253D%2520n%29%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520function%2520currentSlide%28n%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520showSlides%28%28slideIndex%2520%253D%2520n%29%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520function%2520showSlides%28n%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520var%2520i%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520var%2520slides%2520%253D%2520document.getElementsByClassName%28%2522mySlides%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520if%2520%28n%2520%253E%2520slides.length%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520slideIndex%2520%253D%25201%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520if%2520%28n%2520%253C%25201%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520slideIndex%2520%253D%2520slides.length%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520for%2520%28i%2520%253D%25200%253B%2520i%2520%253C%2520slides.length%253B%2520i%252B%252B%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520slides%255Bi%255D.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520slides%255BslideIndex%2520-%25201%255D.style.display%2520%253D%2520%2522block%2522%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+        <hr/>
+
+        <div id="image">
+          <div class="content-intro">
+            <h1>Image</h1>
+            <p class="text-large text-light">
+              We have varieties of image shapes and variation like responsive image,
+              round image ,border-around,border-round,flipped-image.
+            </p>
+          </div>
+    
+          <h3>Responsive Image</h3>
+          <p>
+            Responsive images will automatically adjust to fit the size of the
+            screen. Use the class
+            <span class="primary-text-color"><b>.img-responsive </b></span> Resize
+            the browser window to see the responsive effect:
+          </p>
+          <div class="content-example-container">
+            <img
+              loading="lazy"
+              src="./images//image5.jpg"
+              alt="Nature"
+              class="img-responsive"
+            />
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=991.5&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%253Cimg%2520loading%253D%2522lazy%2522%2520src%253D%2522.%252F..%252Fimages%252F%252Fimage5.jpg%2522%2520alt%253D%2522Nature%2522%2520class%253D%2522img-responsive%2522%2520%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+    
+          <h3>Centered Image</h3>
+          <p>
+            Use class
+            <span class="primary-text-color"><b>.img-centered</b></span> to centre
+            the image
+          </p>
+          <div class="content-example-container">
+            <img
+              loading="lazy"
+              src="./images/image6.jpg"
+              alt="Nature"
+              class="img-centered"
+            />
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=572.25&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%253Cimg%2520loading%253D%2522lazy%2522%2520src%253D%2522.%252F..%252Fimages%252Fimage6.jpg%2522%2520alt%253D%2522Nature%2522%2520class%253D%2522%2520img-centered%2522%2520%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+    
+          <h3>Border Around Image</h3>
+          <p>
+            To add a border around image use
+            <span class="primary-text-color"><b>.img-border-around</b></span> class
+          </p>
+          <div class="content-example-container justify-center">
+            <img
+              loading="lazy"
+              src="https://picsum.photos/300/200"
+              alt="Nature"
+              class="img-border-around"
+            />
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=572.25&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%253Cimg%2520loading%253D%2522lazy%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F300%252F200%2522%2520alt%253D%2522Nature%2522%2520class%253D%2522%2520img-border-around%2522%2520%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+    
+          <h3>Border Rround Image</h3>
+          <p>
+            Make the border of image round by using
+            <span class="primary-text-color"><b>.img-border-round</b></span> class
+          </p>
+          <div class="content-example-container justify-center">
+            <img
+              loading="lazy"
+              src="https://picsum.photos/300/200"
+              alt="Nature"
+              class="img-border-round"
+            />
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=572.25&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%253Cimg%2520loading%253D%2522lazy%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F300%252F200%2522%2520alt%253D%2522Nature%2522%2520class%253D%2522%2520img-border-round%2522%2520%253E%250A"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+    
+          <h3>Flipping Image</h3>
+          <p>
+            This is like mirror effct on image. Use
+            <span class="primary-text-color"><b>.img-flipped</b></span> class class
+            on span tag containing img element.
+          </p>
+          <div class="content-example-container justify-center">
+            <span class="img-flipped">
+              <img
+                loading="lazy"
+                src="https://picsum.photos/250/400"
+                alt="Nature"
+              />
+            </span>
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=572.25&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%253Cspan%2520%2520class%253D%2522img-flipped%2522%253E%2520%253Cimg%2520loading%253D%2522lazy%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F250%252F400%2522%2520alt%253D%2522Nature%2522%2520%253E%2520%253C%252Fspan%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+    
+          <h3>Round Image</h3>
+          <p>
+            Make your image in round shaped by using class
+            <span class="primary-text-color"><b>.img-round</b></span> class
+          </p>
+          <div class="content-example-container justify-center">
+            <img
+              loading="lazy"
+              src="https://picsum.photos/250/300"
+              alt="Nature"
+              class="img-round"
+            />
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=447.5&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%253Cimg%2520loading%253D%2522lazy%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F250%252F300%2522%2520alt%253D%2522Nature%2522%2520class%253D%2522%2520img-round%2522%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+        <hr/>
+
+        <div id="input">
+          <div class="content-intro">
+            <h1>Input</h1>
+            <p class="text-large text-light"></p>
+          </div>
+    
+          <h3>Active input fields</h3>
+          <p>
+            Add <span class="primary-text-color"><b>.form-label</b></span> class to
+            labels and if the field is required then also add
+            <span class="primary-text-color"
+              ><b>.form-label-required-field</b></span
+            >
+            to labels. Add
+            <span class="primary-text-color"><b>.form-field</b></span> for input
+            elements.
+          </p>
+    
+          <div class="content-example-container">
+            <label class="form-label form-label-required-field">First Name</label>
+            <input type="text" class="form-field" />
+    
+            <label class="form-label">Email</label>
+            <input type="email" class="form-field" placeholder="abc@gmail.com" />
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=752.75&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label%2520form-label-required-field%2522%253EFirst%2520Name%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522form-field%2522%2520%252F%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label%2522%253EEmail%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520class%253D%2522form-field%2522%2520placeholder%253D%2522abc%2540gmail.com%2522%2520%252F%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+    
+          <h3>Read only/Disabled fields</h3>
+          <p>
+            Add <span class="primary-text-color"><b>disabled</b></span> attribute to
+            your form element to make them disable. No need to add any extra
+            class.<br />
+            Add <span class="primary-text-color"><b>readonly</b></span> attribute to
+            your form element to make them read-only. No need to add any extra
+            class.
+          </p>
+          <div class="content-example-container">
+            <input
+              type="email"
+              class="form-field"
+              placeholder="Disabled input"
+              disabled
+            />
+            <input
+              type="email"
+              class="form-field"
+              placeholder="Disabled read only"
+              disabled
+              readonly
+            />
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=752.75&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-field%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Disabled%2520input%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520disabled%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-field%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Disabled%2520read%2520only%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520disabled%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520readonly%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+    
+          <h3>Bordered inputs</h3>
+          <p>
+            For input field having border add
+            <span class="primary-text-color"><b>.field-bordered</b></span> class to
+            input element.
+          </p>
+    
+          <div class="content-example-container">
+            <input
+              type="email"
+              class="form-field field-bordered"
+              placeholder="borderd-field"
+            />
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=752.75&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-field%2520field-bordered%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522borderd-field%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+    
+          <h3>Focused fields</h3>
+          <p>
+            For input field having border add
+            <span class="primary-text-color"><b>.field-focused</b></span> class to
+            input element.
+          </p>
+    
+          <div class="content-example-container">
+            <input
+              type="text"
+              class="form-field field-focused"
+              placeholder="focused-field"
+            />
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=752.75&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-field%2520field-focused%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522focused-field%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+    
+          <h3>Animated Search fields</h3>
+          <p>
+            Input field will expand to 100% width when you focused on input.
+            <br />Add
+            <span class="primary-text-color"><b>.field-animated</b></span> class to
+            input element.
+          </p>
+          <div class="content-example-container">
+            <input
+              type="search"
+              class="form-field field-animated"
+              placeholder="Search.."
+            />
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=752.75&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522search%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-field%2520field-animated%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Search..%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+    
+          <h3>Input/Form validation</h3>
+          <p>
+            Below is the input/form validation example. You will have error message
+            and valid message on field level. For html and class, please check below
+            html and for functionality, JavaScript code.
+          </p>
+    
+          <div class="content-example-container">
+            <form class="submit-form-example" novalidate>
+              <div class="row">
+                <div class="w-20">
+                  <label class="form-label form-label-required-field"
+                    >Mobile number</label
+                  >
+                </div>
+                <div class="w-80">
+                  <input
+                    class="form-field"
+                    placeholder="enter mobile number"
+                    pattern="^(\+91)?\s?[1-9][0-9]{9}$"
+                    required
+                  />
+                  <div class="form-validation-msg form-field-error">
+                    <span class="form-field-symbol"
+                      ><i class="fas fa-exclamation-circle"></i></span
+                    >Invalid mobile number!
+                  </div>
+                  <div class="form-validation-msg form-field-success">
+                    <span class="form-field-symbol"
+                      ><i class="fas fa-check-circle"></i></span
+                    >valid
+                  </div>
+                </div>
+              </div>
+    
+              <div class="row">
+                <div class="w-20">
+                  <label class="form-label form-label-required-field"
+                    >Select your Branch</label
+                  >
+                </div>
+                <div class="w-80">
+                  <select class="form-field" required>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Mechanical ">Mechanical</option>
+                    <option value="Civil ">Civil</option>
+                  </select>
+                </div>
+              </div>
+    
+              <div class="row">
+                <div class="w-20">
+                  <label class="form-label">Gender</label>
+                </div>
+                <div class="w-80">
+                  <div class="flex-items">
+                    <input
+                      class="form-checkbox-field"
+                      type="radio"
+                      name="gender"
+                      value="F"
+                      id="female"
+                    />
+                    <label for="female">Female</label>
+                  </div>
+                  <div class="flex-items">
+                    <input
+                      class="form-checkbox-field"
+                      type="radio"
+                      name="gender"
+                      value="M"
+                      id="male"
+                      checked
+                    />
+                    <label for="male">Male</label>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="row">
+                <div class="w-20">
+                  <label class="form-label form-label-required-field"
+                    >Choose your D-O-B</label
+                  >
+                </div>
+                <div class="w-80">
+                  <input class="form-field" type="date" required />
+                  <div class="form-validation-msg form-field-error">
+                    <span class="form-field-symbol"
+                      ><i class="fas fa-exclamation-circle"></i></span
+                    >Please fill birthdate!
+                  </div>
+                  <div class="form-validation-msg form-field-success">
+                    <span class="form-field-symbol"
+                      ><i class="fas fa-check-circle"></i></span
+                    >valid
+                  </div>
+                </div>
+              </div>
+    
+              <div class="row">
+                <div>
+                  <input class="form-checkbox-field" type="checkbox" required />
+                  <label class="form-label-required-field">
+                    I accept the terms.</label
+                  >
+                  <div class="form-validation-msg form-field-error">
+                    <span class="form-field-symbol"
+                      ><i class="fas fa-exclamation-circle"></i></span
+                    >Please check the box!
+                  </div>
+                  <div class="form-validation-msg form-field-success">
+                    <span class="form-field-symbol"
+                      ><i class="fas fa-check-circle"></i></span
+                    >valid
+                  </div>
+                </div>
+              </div>
+    
+              <button class="btn primary-btn-outline" type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=752.75&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%253Cform%2520class%253D%2522submit-form-example%2522%2520novalidate%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522row%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522w-20%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label%2520form-label-required-field%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253EEnter%2520phone%2520number%253C%252Flabel%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522w-80%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-field%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522enter%2520mobile%2520number%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520pattern%253D%2522%255E%28%255C%252B91%29%253F%255Cs%253F%255B1-9%255D%255B0-9%255D%257B9%257D%2524%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-validation-msg%2520form-field-error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522form-field-symbol%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253EInvalid%2520mobile%2520number%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-validation-msg%2520form-field-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522form-field-symbol%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Evalid%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn-outline%2522%2520type%253D%2522submit%2522%253ESubmit%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fform%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+    
+          <h3>Javascript code</h3>
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=752.75&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=const%2520exampleForm%2520%253D%2520document.querySelectorAll%28%2522.submit-form-example%2522%29%253B%250A%250AexampleForm.forEach%28%28form%29%2520%253D%253E%2520%257B%250A%2520%2520form.addEventListener%28%250A%2520%2520%2520%2520%2522submit%2522%252C%250A%2520%2520%2520%2520%28e%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520console.log%28%2522hello%2522%29%253B%250A%2520%2520%2520%2520%2520%2520if%2520%28%21form.checkValidity%28%29%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520e.preventDefault%28%29%253B%250A%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520e.preventDefault%28%29%253B%250A%2520%2520%2520%2520%2520%2520form.classList.add%28%2522form-validated%2522%29%253B%250A%2520%2520%2520%2520%257D%252C%250A%2520%2520%2520%2520false%250A%2520%2520%29%253B%250A%257D%29%253B"
+              style="
+                width: 590px;
+                height: 407px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <script src="./component.js"></script>
+        </div>
+        <hr/>
+
+        <div id="input-slider">
+          <div class="content-intro">
+            <h1>Input slider</h1>
+            <p class="text-large text-light">
+              Sliders are used to decide range for something like price in shopping
+              websites.
+            </p>
+          </div>
+    
+          <h4>Default Range slider</h4>
+    
+          <div class="content-example-container">
+            <input type="range" min="1" max="5000" value="500" />
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=447.5&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%253Cinput%2520type%253D%2522range%2522%2520min%253D%25221%2522%2520max%253D%25225000%2522%2520value%253D%2522500%2522%2520%252F%253E"
+            style= border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+          </div>
+    
+          <h4>Custom Range slider</h4>
+          <p>
+            Add the class
+            <span class="primary-text-color"><b>.range-slider</b></span> to use
+            custom slider.
+          </p>
+          <div class="content-example-container">
+            <input
+              class="range-slider"
+              type="range"
+              min="100"
+              max="5000"
+              value="2500"
+            />
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=447.5&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%253Cinput%250A%2520%2520class%253D%2522range-slider%2522%250A%2520%2520type%253D%2522range%2522%250A%2520%2520min%253D%2522100%2522%250A%2520%2520max%253D%25225000%2522%250A%2520%2520value%253D%25222500%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E"
+            style=" border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+          </div>
+        </div>
+        <hr/>
+
+
+        <div id="lists">
+          <div class="content-intro">
+            <h1>Lists</h1>
+            <p class="text-large text-light">
+              List are used for listng the item either in the navigation or in
+              the articles or somewhere else also.
+            </p>
+          </div>
+
+          <h4>List with no bulltes</h4>
+          <p>
+            To get the list without bullet add the
+            <span class="primary-text-color"><b>.list-style-none</b></span>
+            class.
+          </p>
+
+          <div class="content-example-container justify-center">
+            <ul class="list-style-none list-container">
+              <li>list item1</li>
+              <li>list item2</li>
+              <li>list item3</li>
+            </ul>
+          </div>
+
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=805&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%253Cul%2520class%253D%2522list-style-none%2520%2522%253E%250A%2520%2520%2520%2520%253Cli%253Elist%2520item1%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253Elist%2520item2%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253Elist%2520item3%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <h4>Unordered List</h4>
+          <p>
+            Add the classes like
+            <span class="primary-text-color"
+              ><b> .list-style-circle, .list-style-square </b></span
+            >
+            to get circle and square bullet style respectively.
+          </p>
+
+          <div class="content-example-container justify-center">
+            <ul class="list-container">
+              <li>list item1</li>
+              <li>list item2</li>
+              <li>list item3</li>
+            </ul>
+            <ul class="list-style-circle list-container">
+              <li>list item circle</li>
+              <li>list item circle</li>
+              <li>list item circle</li>
+            </ul>
+            <ul class="list-style-square list-container">
+              <li>list item square</li>
+              <li>list item square</li>
+              <li>list item square</li>
+            </ul>
+          </div>
+
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=805&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%253Cul%2520%253E%250A%2520%2520%2520%2520%253Cli%253Elist%2520item1%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253Elist%2520item2%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253Elist%2520item3%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%2520%2520%250A%2520%2520%253Cul%2520class%253D%2522list-style-circle%2522%253E%250A%2520%2520%2520%2520%253Cli%253Elist%2520item%2520circle%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253Elist%2520item%2520circle%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253Elist%2520item%2520circle%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%2520%2520%250A%2520%2520%253Cul%2520class%253D%2522list-style-square%2522%253E%250A%2520%2520%2520%2520%253Cli%253Elist%2520item%2520square%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253Elist%2520item%2520square%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253Elist%2520item%2520square%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <h4>Ordered Lists</h4>
+          <p>
+            Add the classes like
+            <span class="primary-text-color"
+              ><b
+                >.list-style-small-alpha, .list-style-small-roman,
+                .list-style-capital-alpha, .list-style-capital-roman
+              </b></span
+            >
+            according to the bullet style you need.<br />
+            To reverse the order of ordered list, add
+            <span class="primary-text-color"><b>reversed</b></span> attribute to
+            ol element
+          </p>
+          <div class="content-example-container">
+            <ol class="list-container">
+              <li>List item with numbers</li>
+              <li>List item with numbers</li>
+              <li>List item with numbers</li>
+            </ol>
+            <ol class="list-style-small-alpha list-container" reversed>
+              <li>Reversed list item</li>
+              <li>Reversed list item</li>
+              <li>Reversed list item</li>
+            </ol>
+            <ol class="list-container">
+              <li>List item with alphabets</li>
+              <li>List item with alphabets</li>
+              <li>List item with alphabets</li>
+            </ol>
+            <ol class="list-style-small-roman list-container">
+              <li>List item with roman</li>
+              <li>List item with roman</li>
+              <li>List item with roman</li>
+            </ol>
+            <ol class="list-style-capital-alpha list-container">
+              <li>List item with alphabets</li>
+              <li>List item with alphabets</li>
+              <li>List item with alphabets</li>
+            </ol>
+            <ol class="list-style-capital-roman list-container">
+              <li>List item with roman</li>
+              <li>List item with roman</li>
+              <li>List item with roman</li>
+            </ol>
+          </div>
+
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=805&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%2520%253Col%2520%253E%250A%2520%2520%2520%2520%253Cli%253EList%2520item%2520with%2520numbers%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EList%2520item%2520with%2520numbers%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EList%2520item%2520with%2520numbers%253C%252Fli%253E%250A%2520%2520%253C%252Fol%253E%250A%2520%2520%250A%2520%2520%253Col%2520class%253D%2522list-style-small-alpha%2522%2520reversed%253E%250A%2520%2520%2520%2520%253Cli%253EReversed%2520list%2520item%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EReversed%2520list%2520item%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EReversed%2520list%2520item%253C%252Fli%253E%250A%2520%2520%253C%252Fol%253E%250A%2520%2520%250A%2520%2520%253Col%2520%253E%250A%2520%2520%2520%2520%253Cli%253EList%2520item%2520with%2520alphabets%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EList%2520item%2520with%2520alphabets%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EList%2520item%2520with%2520alphabets%253C%252Fli%253E%250A%2520%2520%253C%252Fol%253E%250A%2520%2520%250A%2520%2520%253Col%2520class%253D%2522list-style-small-roman%2522%253E%250A%2520%2520%2520%2520%253Cli%253EList%2520item%2520with%2520roman%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EList%2520item%2520with%2520roman%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EList%2520item%2520with%2520roman%253C%252Fli%253E%250A%2520%2520%253C%252Fol%253E%250A%2520%2520%250A%2520%2520%253Col%2520class%253D%2522list-style-capital-alpha%2522%253E%250A%2520%2520%2520%2520%253Cli%253EList%2520item%2520with%2520alphabets%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EList%2520item%2520with%2520alphabets%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EList%2520item%2520with%2520alphabets%253C%252Fli%253E%250A%2520%2520%253C%252Fol%253E%250A%2520%2520%250A%2520%2520%253Col%2520class%253D%2522list-style-capital-roman%2522%253E%250A%2520%2520%2520%2520%253Cli%253EList%2520item%2520with%2520roman%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EList%2520item%2520with%2520roman%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EList%2520item%2520with%2520roman%253C%252Fli%253E%250A%2520%2520%253C%252Fol%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <h4>Spaced List</h4>
+          <p>
+            All the above lists example was of stacked list. To get spaced list
+            use
+            <span class="primary-text-color"><b>.list-spaced</b></span> class.
+          </p>
+          <div class="content-example-container">
+            <ul class="list-spaced list-style-none">
+              <li>list item1</li>
+              <li>list item2</li>
+              <li>list item3</li>
+            </ul>
+          </div>
+
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=805&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%253Cul%2520class%253D%2522list-spaced%2520list-style-none%2522%253E%250A%2520%2520%2520%2520%253Cli%253Elist%2520item1%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253Elist%2520item2%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253Elist%2520item3%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+        <hr/>
+
+        <div id="modal">
+          <h1>Modals</h1>
+          <p class="text-large text-light">
+            A modal is a dialog box/popup window that is displayed on top of the
+            current page:
+          </p>
+    
+          <div class="content-example-container">
+            <img
+              loading="lazy"
+              src="./images/Modal-screenshot.GIF"
+              alt="Nature"
+              class="img-centered"
+              max-height="200px"
+              ;
+            />
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=752.75&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%253Cdiv%2520id%253D%2522modal%2522%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522modal-close%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EDo%2520you%2520want%2520to%2520continue%2520shopping.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn%2522%253EShop%2520now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520secondary-btn-outline%2522%253EGo%2520back%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <h3>Javascript Code</h3>
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=752.75&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%2520%2520%2520%2520var%2520modal%2520%253D%2520document.querySelector%28%2522.modal%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520var%2520span%2520%253D%2520document.querySelector%28%2522.modal-close%2522%29%253B%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520span.onclick%2520%253D%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520modal.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%253B%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520window.onclick%2520%253D%2520%28e%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520if%2520%28e.target%2520%253D%253D%2520modal%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520modal.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%253B"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+    
+          <h3>Live Demo</h3>
+          <p>Click on the button below .</p>
+    
+          <div class="content-example-container">
+            <div id="modal" class="modal">
+              <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <p>Do you want to continue shopping.</p>
+                <button class="btn primary-btn">Shop now</button>
+                <button class="btn secondary-btn-outline">Go back</button>
+              </div>
+            </div>
+    
+            <button class="btn primary-btn" id="modal-open-btn">Open nodal</button>
+          </div>
+        </div>
+        <hr/>
+
+
+        <div id="navbar">
+
+   
+          <h1>Navigation Bar</h1>
+          <p class="text-large text-light">
+            Navigation bar is used to navigate through the web apps or websites.This
+            navigation component is fully responsive.
+          </p>
+        <p>This navigation bar has four sections.
+          <ul class="list-style-circle">
+            <li>hamburger-menu</li>
+            <li>logo-section</li>
+            <li>search-bar</li>
+            <li>Nav-links</li>
+          </ul>
+          <br/>
+          Resize the window to see the rsponsiveness.
+        </p>
+          <div class="content-example-container">
+            <header class="header">
+              <i class="fas fa-bars hamburger-menu"></i>
+      
+              <a href="#" class="logo"><i class="fas fa-store"></i>Frontstore</a>
+      
+              <form action="" class="search-form">
+                <label for="search-box" class="fas fa-search"></label>
+                <input type="search" id="search-box" placeholder="Search an item" />
+              </form>
+      
+              <div class="nav-icons">
+                <span class="badge-container"><i class="fas fa-user"> </i></span>
+      
+                <span class="badge-container">
+                  <i class="fas fa-heart">
+                    <span class="badge-icon badge-pink">8</span></i
+                  >
+                </span>
+      
+                <span class="badge-container">
+                  <i class="fas fa-shopping-cart">
+                    <span class="badge-icon badge-pink">1</span></i
+                  >
+                </span>
+              </div>
+            </header>
+            </div>
+      
+            <div class="content-code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=805&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%253Cheader%2520class%253D%2522header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bars%2520hamburger-menu%2522%253E%253C%252Fi%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522logo%2522%253E%253Ci%2520class%253D%2522fas%2520fa-store%2522%253E%253C%252Fi%253EFrontstore%253C%252Fa%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cform%2520action%253D%2522%2522%2520class%253D%2522search-form%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522search-box%2522%2520class%253D%2522fas%2520fa-search%2522%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522search%2522%2520id%253D%2522search-box%2522%2520placeholder%253D%2522Search%2520an%2520item%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fform%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-container%2522%253E%253Ci%2520class%253D%2522fas%2520fa-user%2522%253E%2520%253C%252Fi%253E%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-icon%2520badge-pink%2522%253E8%253C%252Fspan%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%2520%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-icon%2520badge-pink%2522%253E1%253C%252Fspan%253E%253C%252Fi%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fheader%253E"
+                style="border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          
+        </div> 
+        <hr/>
+
+        <div id="rating">
+          <div class="content-intro">
+            <h1>Rating</h1>
+            <p class="text-large text-light">
+              Rating components are generally used to give feedback .
+            </p>
+          </div>
+          <h4>Read-only ratings</h4>
+          <p>
+            There are two types of read only ratings : input read-only & badge
+            read-only.
+          </p>
+    
+          <div class="content-example-container">
+            <div class="rating-badge" style="margin-right: 15px">
+              <span class="rating-badge-number">5</span>
+              <span class="rating-badge-star"><i class="fas fa-star"></i></span>
+              <span class="rating-badge-number">|</span>
+              <span class="rating-badge-number">5</span>
+            </div>
+    
+            <div class="rating-container">
+              <label>
+                <input class="rating-star-input" type="checkbox" checked disabled />
+                <i class="fas fa-star rating-star-icon"></i>
+              </label>
+              <label>
+                <input class="rating-star-input" type="checkbox" checked disabled />
+                <i class="fas fa-star rating-star-icon"></i>
+              </label>
+              <label>
+                <input class="rating-star-input" type="checkbox" checked disabled />
+                <i class="fas fa-star rating-star-icon"></i>
+              </label>
+              <label>
+                <input class="rating-star-input" type="checkbox" disabled />
+                <i class="fas fa-star rating-star-icon"></i>
+              </label>
+              <label>
+                <input class="rating-star-input" type="checkbox" disabled />
+                <i class="fas fa-star rating-star-icon"></i>
+              </label>
+            </div>
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=805&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522rating-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-badge-number%2522%253E5%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-badge-star%2522%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-badge-number%2522%253E%257C%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-badge-number%2522%253E5%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522rating-container%2522%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-star-input%2522%2520type%253D%2522checkbox%2522%2520checked%2520disabled%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-star-input%2522%2520type%253D%2522checkbox%2522%2520checked%2520disabled%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-star-input%2522%2520type%253D%2522checkbox%2522%2520checked%2520disabled%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-star-input%2522%2520type%253D%2522checkbox%2522%2520disabled%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-star-input%2522%2520type%253D%2522checkbox%2522%2520disabled%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%253C%252Fdiv%253E%2520%2520%2520"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+    
+          <h4>Demo</h4>
+    
+          <div style="display: block" class="content-example-container">
+            <p class="text-large text-bold primary-text-color">
+              Give your feedback
+            </p>
+            <form class="example-rating-form">
+              <div class="rating-star-container">
+                <label>
+                  <input class="rating-star-input" type="checkbox" />
+                  <i class="fas fa-star rating-star-icon"></i>
+                </label>
+                <label>
+                  <input class="rating-star-input" type="checkbox" />
+                  <i class="fas fa-star rating-star-icon"></i>
+                </label>
+                <label>
+                  <input class="rating-star-input" type="checkbox" />
+                  <i class="fas fa-star rating-star-icon"></i>
+                </label>
+                <label>
+                  <input class="rating-star-input" type="checkbox" />
+                  <i class="fas fa-star rating-star-icon"></i>
+                </label>
+                <label>
+                  <input class="rating-star-input" type="checkbox" />
+                  <i class="fas fa-star rating-star-icon"></i>
+                </label>
+              </div>
+              <button class="btn primary-btn">Submit</button>
+            </form>
+            <p class="rating-example-number-show text-bold"></p>
+          </div>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=752.75&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-large%2520text-bold%2522%253EGive%2520your%2520feedback%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cform%2520class%253D%2522example-rating-form%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating-star-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-star-input%2522%2520type%253D%2522checkbox%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-star-input%2522%2520type%253D%2522checkbox%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-star-input%2522%2520type%253D%2522checkbox%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-star-input%2522%2520type%253D%2522checkbox%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-star-input%2522%2520type%253D%2522checkbox%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn%2522%253ESubmit%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fform%253E"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+    
+          <h4>Javascript code</h4>
+    
+          <div class="content-code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=752.75&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520const%2520ratingStars%2520%253D%2520document.querySelectorAll%28%250A%2520%2520%2520%2520%2520%2520%2520%2520%2522.example-rating-form%2520.rating-star-input%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520const%2520ratingStarsForm%2520%253D%2520document.querySelector%28%2522.example-rating-form%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520const%2520ratingExampleShowRating%2520%253D%2520document.querySelector%28%250A%2520%2520%2520%2520%2520%2520%2520%2520%2522.rating-example-number-show%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%29%253B%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520ratingStars.forEach%28%28star%252C%2520id%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520star.addEventListener%28%2522change%2522%252C%2520%28%29%2520%253D%253E%2520checkAllTheBelowStars%28id%29%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%29%253B%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520function%2520checkAllTheBelowStars%28idx%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520if%2520%28ratingStars%255Bidx%255D.checked%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520for%2520%28let%2520j%2520%253D%2520idx%2520-%25201%253B%2520j%2520%253E%253D%25200%253B%2520j--%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ratingStars%255Bj%255D.checked%2520%253D%2520true%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%2520else%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520for%2520%28let%2520j%2520%253D%2520idx%2520%252B%25201%253B%2520j%2520%253C%2520ratingStars.length%253B%2520j%252B%252B%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ratingStars%255Bj%255D.checked%2520%253D%2520false%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%250A%2520%2520ratingStarsForm.addEventListener%28%2522submit%2522%252C%2520%28e%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520e.preventDefault%28%29%253B%250A%2520%2520%2520%2520let%2520sum%2520%253D%25200%253B%250A%2520%2520%2520%2520ratingStars.forEach%28%28star%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520if%2520%28star.checked%29%2520sum%2520%252B%253D%25201%253B%250A%2520%2520%2520%2520%257D%29%253B%250A%2520%2520%2520%2520ratingExampleShowRating.innerText%2520%253D%2520%2560You%2520have%2520submitted%2520%2524%257Bsum%257D%2520rating%2560%253B%250A%2520%2520%257D%29%253B%250A"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+        <hr/>
+
+
+        <div id="toast">
+
+          <div class="content-intro">
+              <h1>Toast</h1>
+              <p class="text-large text-light">This component can be used for toast or snackbar component. 
+                  Toast is mostly used to show feedback message. Snackbar is to used show message that need user action</p>
+        </div> 
+  
+        <h4>Types of toast</h4>   
+        <p> Use the <span class="primary-text-color"><b>.toast</b></span> class for all types of toast and then add the 
+          <span class="primary-text-color"><b>.toast-success, .toast-error</b></span> for success toast and error toast respectively.</p>
+  
+        <div class="content-example-container ">
+  
+          <div class="toast toast-success flex-items">
+              <div class="toast-icon "><i class="fas fa-check-circle"></i></div>
+              <div class="toast-description">Added to your wishlist</div>
+              <div class="toast-icon toast-close-icon"><i class="fas fa-times-circle"></i></div>
+              
+          </div>
+        
+          <div class="toast toast-success flex-items">
+            <div class="toast-icon"><i class="fas fa-check-circle"></i></div>
+            <div class="toast-description">Removed from your wishlist</div>
+            <div class="toast-icon toast-close-icon"><i class="fas fa-times-circle"></i></div>
+        </div>
+         
+        <div class="toast toast-error flex-items">
+            <div class="toast-icon"><i class="fas fa-exclamation-circle"></i></div>
+            <div class="toast-description">Unable to remove from wishlist</div>
+            <div class="toast-icon toast-close-icon"><i class="fas fa-times-circle"></i></div>
+        </div>
+  
+      </div>
+  
+      <div class="content-code-snippet flex-items">
+          <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=447.5&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast%2520toast-success%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-icon%2520%2522%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-description%2522%253EAdded%2520to%2520your%2520wishlist%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-icon%2520toast-close-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times-circle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522toast%2520toast-success%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-description%2522%253ERemoved%2520from%2520your%2520wishlist%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-icon%2520toast-close-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times-circle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522toast%2520toast-error%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-description%2522%253EUnable%2520to%2520remove%2520from%2520wishlist%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-icon%2520toast-close-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times-circle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              style=" border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+              </iframe>
+      </div>
+      
+      <h3>Live Example </h3>
+      <p>Click on the button below to see the toast. Toast will disappear itself after 3 second.</p>
+     
+      <div class="content-example-container ">
+  
+      <button class="btn primary-btn" id="toast-example-btn">Show toast</button>
+  
+      <div class="toast toast-success flex-items" id="toast-example" style="visibility: hidden;">
+          <div class="toast-icon "><i class="fas fa-check-circle"></i></div>
+          <div class="toast-description">Product successfully added to cart</div>
+          <div class="toast-icon toast-close-icon" id="close-example-toast"><i class="fas fa-times-circle"></i></div>
+      </div>
+      </div>
+  
+      <div class="content-code-snippet flex-items">
+          <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=447.5&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast%2520toast-success%2522%2520id%253D%2522toast-example%2522%2520style%253D%2522visibility%253A%2520hidden%253B%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-icon%2520%2522%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-description%2522%253EProduct%2520successfully%2520added%2520to%2520cart%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-icon%2520toast-close-icon%2522%2520id%253D%2522close-example-toast%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times-circle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+          style=" border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+  
+      <h3>Javascript</h3>
+      <div class="content-code-snippet flex-items">
+          <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=one-light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=447.5&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=const%2520toastExample%253Ddocument.querySelector%28%27%2523toast-example%27%29%253B%250Aconst%2520toastExampleButton%253Ddocument.querySelector%28%27%2523toast-example-btn%27%29%253B%250Aconst%2520btnToCloseToast%253Ddocument.querySelector%28%27%2523close-example-toast%27%29%253B%250Alet%2520timeIdForToast%253B%250A%250AtoastExampleButton.addEventListener%28%2522click%2522%252C%28%29%253D%253E%257B%250A%2520%2520%2520%2520toastExample.style.visibility%253D%2522visible%2522%253B%250A%250A%2520%2520%2520%2520timeIdForToast%253DsetTimeout%28%28%29%253D%253E%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520toastExample.style.visibility%253D%2522hidden%2522%253B%250A%2520%2520%2520%2520%257D%252C3000%29%253B%250A%257D%29%250A%250AbtnToCloseToast.addEventListener%28%2522click%2522%252C%2520%28%29%253D%253E%257B%250A%2520%2520%2520%2520clearTimeout%28timeIdForToast%29%253B%250A%2520%2520%2520%2520toastExample.style.visibility%253D%2522hidden%2522%253B%250A%257D%29"
+          style=" border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+          </iframe>
+      </div>
+  
+      </div>
+        <hr/>
+
+        <div id="typography">
+          <div class="content-intro">
+            <h1>Typography</h1>
+            <p class="text-large text-light">Check out below text utilities.</p>
+          </div>
+    
+          <h4>Heading text</h4>
+          <p>
+            Use
+            <span class="primary-text-color"><b>h1, h2, h3, h4, h5, h6</b></span>
+            for headings.
+          </p>
+    
+          <div class="content-example-container display-flex-coloumn">
+            <h1>H1 heading</h1>
+            <h2>H2 heading</h2>
+            <h3>H3 heading</h3>
+            <h4>H4 heading</h4>
+            <h5>H5 heading</h5>
+            <h6>H6 heading</h6>
+          </div>
+    
+          <h4>Paragraph text</h4>
+          <p>
+            For paragraph u can use p element.<br />
+            And for font-styling use
+            <span class="primary-text-color">
+              <b>.text-large, .text-medium, .text-small</b>
+            </span>
+            classes.
+          </p>
+          <div class="content-example-container display-flex-coloumn">
+            <p class="text-large">This is large text.</p>
+            <p class="text-medium">This is medium text.</p>
+            <p class="text-small">This is small text.</p>
+          </div>
+          <p>
+            To align the text use
+            <span class="primary-text-color">
+              <b>.text-left, .text-right, .text-center</b>
+            </span>
+            classes.
+          </p>
+          <div style="display: block" class="content-example-container">
+            <h5 class="text-center">This is text align center</h5>
+            <h5 class="text-left">This is text align left</h5>
+            <h5 class="text-right">This is text align right</h5>
+          </div>
+    
+          <h4>Some more text styles</h4>
+           <p>
+            <ul class="list-style-square ">
+                <li>To strike-through the text, add <span class="primary-text-color">
+                    <b>.text-strike-through</b>
+                </span> class</li>
+                <li>For bold text (font-weight:700) use <span class="primary-text-color">
+                    <b>.text-bold</b>
+                </span> class.</li>
+                <li>For semi-bold text (font-weight:600) use <span class="primary-text-color">
+                    <b>.text-semibold</b>
+                </span> class.</li>
+                <li>For regular text (font-weight:500) use <span class="primary-text-color">
+                    <b>.text-regular</b>
+                </span> class.</li>
+                <li>For bold text (font-weight:400) use <span class="primary-text-color">
+                    <b>.text-light</b>
+                </span> class.</li>
+                <li> To make text of primary and secondary color add<span class="primary-text-color">
+                    <b>.primary-text-color, .secondary-text-color</b>
+                </span> class.</li>
+              </ul>
+           </p>
+    
+           <div style="display: block;" class="content-example-container">
+            <p class="text-strike-through">Text with strike-through.</p>
+            <p class="text-bold">Text with bold font-weight.</p>
+            <p class="text-semibold">Text with semibold font-weight</p>
+            <p class="text-regular">Text with regular font-weight.</p>
+            <p class="text-light">Text with light font-weight.</p>
+            <p class="primary-text-color">Text with primary color.</p>
+            <p class="secondary-text-color">Text with secondary text color.</p>
+           </div>
+        </div>
+        <hr/>
+
+      </main>
+
+      <a href="#"> <button class="float-btn" ><i class="fas fa-arrow-up"></i></button></a> 
+
+    </div>
+
+    <script src="./Components/component.js"></script>
+    <script src="./Docs-js/docs-sidebar.js"></script>
+  </body>
 </html>

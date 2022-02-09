@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>This is the landing page</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Front-UI | Home</title>
+  </head>
+  <body>
+    <header class="docs-nav-bar">
+      <a href="#" class="logo">Front-UI</a>
+      <div class="nav-links">
+        <a href="#" class="nav-link">Home</a>
+        <a href="./docs.html" class="nav-link">Documentation</a>
+      </div>
+
+      <div class="nav-icons" id="docs-nav-bar-nav-icons">
+        <a href="https://github.com/Radheshyam1234" target="_blank"
+          ><span class="nav-icon"><i class="fab fa-github"></i></span
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/radheshyam-kumar-4738191aa/"
+          target="_blank"
+          ><span class="nav-icon"><i class="fab fa-linkedin-in"></i></span
+        ></a>
+        <a href="https://twitter.com/Radhesh13644055" target="_blank"
+          ><span class="nav-icon"><i class="fab fa-twitter"></i></span
+        ></a>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="spacer-2rem"></div>
+      <div class="grid-50-50-layout">
+        <div>
+          <h2>Design Your UI with Front-UI</h2>
+          <p class="text-large">
+            Make the component your own by just a click. It is user-friendly and
+            customizable. Front-UI allows you to design and build web Apps
+            faster by providing a range of reusable components.
+          </p>
+          <div class="row">
+            <a href="#installation"
+              ><button class="btn primary-btn-outline">Installation</button></a
+            >
+            <a href="./docs.html">
+              <button class="btn primary-btn">Documentation</button></a
+            >
+          </div>
+        </div>
+
+        <div>
+          <img class="img-responsive" src="./images/Home-page-image.jpg" />
+        </div>
+      </div>
+
+      <div class="spacer-2rem"></div>
+      <div class="spacer-2rem"></div>
+
+      <div class="grid-50-50-layout">
+        <div id="installation">
+          <h3>Installation Process</h3>
+          <p>
+            Copy and paste the code in the head tag of your html document. So
+            that you can style your components by just adding class names to
+            your html elements.
+          </p>
+          <a href="./docs.html"
+            ><button class="btn primary-btn">Documentation</button></a
+          >
+        </div>
+
+        <div class="content-code-snippet">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=text%2Fx-c%2B%2Bsrc&width=447.5&ds=false&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=162%25&si=false&es=2x&wm=false&code=%253Cimg%2520loading%253D%2522lazy%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F250%252F300%2522%2520alt%253D%2522Nature%2522%2520class%253D%2522%2520img-round%2522%253E"
+            style="border: 0; transform: scale(1); overflow: hidden"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
