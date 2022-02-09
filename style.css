@@ -1,0 +1,58 @@
+@import "./Components/front-u-i.css";
+@import "./Docs-css/document-content-code-snippet.css";
+@import "./Docs-css/document-content-example-container.css";
+@import "./Docs-css/document-navigation.css";
+@import "./Docs-css/sidebar.css";
+
+.main {
+  padding: 1rem 3rem;
+  grid-area: main;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "docs-nav-bar docs-nav-bar docs-nav-bar docs-nav-bar docs-nav-bar"
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar main main main main";
+  margin-bottom: 1.5rem;
+}
+
+hr {
+  margin: 3rem 0 2rem;
+}
+
+html,
+body {
+  overflow-x: clip;
+  background-color: #fcfcfc;
+}
+
+.spacer-2rem {
+  width: 100%;
+  height: 2rem;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 1132px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "docs-nav-bar"
+      "main";
+    margin-bottom: 1.5rem;
+  }
+}

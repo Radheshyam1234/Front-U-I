@@ -1,0 +1,69 @@
+.docs-nav-bar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 10px 4px rgb(0 0 0 / 5%);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1.4rem;
+  width: 100%;
+  grid-area: docs-nav-bar;
+}
+
+.docs-nav-bar .logo {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  font-weight: bolder;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+
+.docs-nav-bar .hamburger-menu {
+  padding: 8px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  display: none;
+}
+
+.docs-nav-bar .hamburger-menu:hover {
+  color: var(--primary-color);
+}
+.docs-nav-bar .nav-links {
+  margin-left: 4rem;
+}
+.docs-nav-bar .nav-link {
+  text-decoration: none;
+  color: var(--dark-secondary-color);
+  padding: 1rem;
+}
+.docs-nav-bar .nav-link:hover {
+  color: var(--primary-color);
+}
+
+.docs-nav-bar .nav-icons {
+  margin-left: auto;
+  margin-right: 2rem;
+}
+.docs-nav-bar .nav-icons .nav-icon i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 1132px) {
+  #sidebar-hamburger {
+    display: block;
+  }
+  .docs-nav-bar .nav-links {
+    display: none;
+  }
+}
+
+@media (max-width: 330px) {
+  .docs-nav-bar .logo {
+    display: none;
+  }
+}
